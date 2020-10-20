@@ -1,0 +1,39 @@
+editor:
+  title: Editor
+  slug: editor
+  permissions:
+    - super
+member:
+  title: Member
+  slug: member
+  permissions: {  }
+observer:
+  title: Observer
+  slug: observer
+  permissions:
+    - 'access cp'
+    - 'content:view_drafts_on_frontend'
+    - 'view pages entries'
+    - 'view events entries'
+    - 'view sodium entries'
+    - 'view grantees entries'
+    - 'view community_news entries'
+    - 'view networking entries'
+    - 'collections:team-list:view'
+    - 'collections:toolkit-hypertension:view'
+    - 'collections:toolkit-salt:view'
+    - 'collections:toolkit-transfat:view'
+    - 'view webinars entries'
+    - 'view country terms'
+    - 'view policy terms'
+    - 'taxonomies:resource-category:view'
+    - 'taxonomies:resource-language:view'
+    - 'taxonomies:resource-region:view'
+    - 'taxonomies:resource-source:view'
+    - 'view setting terms'
+    - 'view main assets'
+    - 'view membership form submissions'
+    - 'delete membership form submissions'
+    - 'view password_form form submissions'
+    - 'delete password_form form submissions'
+    - 'view users'

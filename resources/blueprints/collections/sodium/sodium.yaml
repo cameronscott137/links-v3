@@ -1,0 +1,92 @@
+sections:
+  main:
+    display: Link
+    fields:
+      -
+        handle: source
+        field:
+          type: text
+          display: Source
+      -
+        handle: link_url
+        field:
+          type: text
+          width: 25
+          display: 'Link URL'
+          instructions: 'If the link is external, enter the URL'
+      -
+        handle: attachment
+        field:
+          type: assets
+          container: main
+          folder: PDFs
+          restrict: true
+          max_files: 1
+          mode: grid
+          instructions: 'If you upload a file, you do not need to enter a Link URL'
+          width: 25
+          display: Attachment
+      -
+        handle: link_thumbnail
+        field:
+          type: assets
+          container: main
+          folder: Sodium
+          restrict: false
+          max_files: 1
+          mode: grid
+          instructions: 'An optimised jpg no more than 1200px wide or high'
+          width: 25
+          display: 'Link Thumbnail'
+      -
+        handle: pinned
+        field:
+          type: toggle
+          instructions: 'Pin this item to the top as a Key Resource?'
+          width: 25
+          display: 'Key Resource'
+      -
+        handle: description
+        field:
+          type: bard
+          instructions: Optional
+          display: Description
+          save_html: true
+          buttons:
+            - bold
+            - italic
+            - unorderedlist
+            - orderedlist
+            - html
+            - quote
+            - codeblock
+            - h1
+            - h2
+            - h3
+            - h4
+            - h5
+            - h6
+            - anchor
+      -
+        handle: additional_resources
+        field:
+          type: replicator
+          sets:
+            resource:
+              display: Resource
+              fields:
+                -
+                  handle: additional_resource_url
+                  field:
+                    type: text
+                    width: 50
+                    display: 'Additional Resource URL'
+                -
+                  handle: additional_resources_text
+                  field:
+                    type: text
+                    width: 50
+                    display: 'Additional Resources Text'
+          display: 'Additional Resources'
+taxonomies: true
+title: 'Sodium Resources'

@@ -1,0 +1,136 @@
+title: 'Application form'
+fields:
+  -
+    handle: first_name
+    field:
+      type: text
+      display: 'First Name'
+      validate: required
+  -
+    handle: last_name
+    field:
+      type: text
+      display: 'Last Name/ Family Name'
+      validate: required
+  -
+    handle: title
+    field:
+      type: text
+      display: Title
+  -
+    handle: degrees
+    field:
+      type: text
+      display: Degrees
+  -
+    handle: position
+    field:
+      type: text
+      display: 'Position within your organization *'
+      validate: required
+  -
+    handle: organization
+    field:
+      type: text
+      display: 'Name of your organization *'
+      validate: required
+  -
+    handle: email_address
+    field:
+      type: text
+      display: 'Email address *'
+      validate: required
+  -
+    handle: phone_number
+    field:
+      type: text
+      display: 'Phone number'
+  -
+    handle: focus_of_cardiovascular_work
+    field:
+      type: text
+      display: 'Focus of cardiovascular work'
+  -
+    handle: ht_control
+    field:
+      type: text
+      display: 'Hypertension control'
+  -
+    handle: sodium
+    field:
+      type: text
+      display: 'Salt reduction'
+  -
+    handle: tf_elimination
+    field:
+      type: text
+      display: 'Elimination of trans fat'
+  -
+    handle: where_you_work
+    field:
+      type: text
+      display: 'Country(ies) in which you work *'
+      validate: required
+  -
+    handle: city
+    field:
+      type: text
+      display: 'City where you are based *'
+      validate: required
+  -
+    handle: country
+    field:
+      type: text
+      display: 'Country where you are based *'
+      validate: required
+  -
+    handle: bio
+    field:
+      type: text
+      display: 'Link to your bio (optional)'
+  -
+    handle: affiliation
+    field:
+      type: text
+      display: 'Are you affiliated with or supported by any of the following industries (choose all that apply)?'
+  -
+    handle: tobacco
+    field:
+      type: text
+      display: '1. Tobacco'
+  -
+    handle: weapons
+    field:
+      type: text
+      display: '2. Weapons'
+  -
+    handle: sugary_drinks
+    field:
+      type: text
+      display: '3. Sugary drinks'
+  -
+    handle: alcohol
+    field:
+      type: text
+      display: '4. Alcoholic beverages'
+  -
+    handle: pharma
+    field:
+      type: text
+      display: '5. Pharmaceuticals, medical devices, for-profit healthcare, health insurance, food, beverage or related industries'
+  -
+    handle: not-affiliated
+    field:
+      type: text
+      display: '6. I am not affiliated with nor supported by any of the above industries'
+  -
+    handle: duration
+    field:
+      type: text
+      display: 'If you selected affiliation #5, please summarize the nature and duration of the affiliation/support, and confirm whether it is ongoing'
+  -
+    handle: consent
+    field:
+      type: text
+      display: 'Do you consent to sharing your contact information? †*'
+      validate: required

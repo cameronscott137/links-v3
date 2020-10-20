@@ -1,0 +1,4 @@
+title: 'LINKS Community News'
+order: date
+fieldset: community_news
+template: news/post

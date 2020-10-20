@@ -1,0 +1,35 @@
+title: About
+sections:
+  main:
+    display: Main
+    fields:
+      title:
+        type: text
+        width: 33
+        localizable: true
+        display: Title
+        instructions: 'Longer page title'
+      slug:
+        type: text
+        width: 33
+        instructions: 'The unique part of the url, shorter is better'
+      nav_title:
+        type: text
+        instructions: 'The shorter title displayed in the navigation'
+        width: 33
+        display: 'Navigation Title'
+      sidebar_text:
+        restrict_assets: false
+        type: redactor
+        display: 'Sidebar text'
+        width: 33
+      main_text:
+        container: main
+        restrict_assets: false
+        type: redactor
+        display: 'Main Text'
+        width: 66
+      hide_from_top_nav:
+        type: toggle
+        display: 'Hide from top nav'
+taxonomies: true

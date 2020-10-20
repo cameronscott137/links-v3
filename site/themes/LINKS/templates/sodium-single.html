@@ -1,0 +1,36 @@
+<main>
+    <div class="inner">
+    
+        <div class="c-1">
+                 
+            <h3>Links toolkit</h3>   
+            <h1>{{ title }}</h1>
+            <div class="grid toolkit single">	
+
+                    <img src="{{ link_thumbnail }}" alt="{{ title }}" >
+  
+
+                    <div class="description">
+                        
+                        {{ description }}
+        
+                    <p><a href="{{ if attachment }}{{ attachment }}{{ else }}{{ link_url }}{{ /if }}" target="_blank" class="button">Download</a></p>
+ 
+                    {{ if additional_resources }}
+                    <h4>Additional Resources</h4>
+                    <ul class="links-list">
+                      {{ additional_resources }} 
+                          <li><a href="{{ additional_resource_url }} ">{{ additional_resources_text }}</a></li>
+                      {{ /additional_resources }}   
+                      </ul>           
+                    {{ /if }}
+                
+                </div>
+
+            
+            </div>
+            
+        </div>    <!-- End of Toolkit -->
+    
+        </div>
+</main>

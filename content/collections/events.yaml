@@ -1,0 +1,6 @@
+title: Events
+date: true
+date_behavior:
+  past: public
+  future: unlisted
+sort_dir: desc

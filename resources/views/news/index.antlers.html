@@ -1,0 +1,42 @@
+
+<main>
+    <div class="inner content">
+
+
+
+
+    <div class="grid news-list">
+        <h1 class="">{{ title }}</h1>
+        
+    
+    {{ collection from="community_news" }}
+    
+        <div class="news-story">
+            
+            
+            <h3>{{ date format="d M Y" }}</h3>
+             <h2><a href="{{ url }}" rel="bookmark">{{ title }}</a></h2>
+                          
+            {{ if mast_image }}
+            <figure>
+                {{ if image_link }}
+                     <a href="{{ image_link }}" class="img-link" target="_blank"><img src="{{ mast_image }}">
+                    </a>
+                {{ else }}
+                    <img src="{{ mast_image }}">
+                {{ /if }}
+            </figure>
+            {{ /if }}
+            
+            {{ main_content }}
+            
+           <p> <a href="{{ url }}" rel="bookmark">Read more</a></p>
+
+        </div>
+
+    {{ /collection }}
+    
+    </div>
+    
+    </div>
+</main>

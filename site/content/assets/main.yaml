@@ -1,0 +1,254 @@
+title: 'Main Assets'
+path: assets
+url: /assets
+assets:
+  people/08b67007-9c36-4253-8c95-7a615f1f3f84-4963-0000026e75953e14-e1517823840533-768x768.jpeg:
+    title: 'Christine Charlotte Akselsen'
+    alt: 'Christine Charlotte Akselsen'
+  people/johan_borg_crop.jpg:
+    title: 'Johan Borg'
+    alt: 'Johan Borg'
+  people/helle_chr._nissen-lie_detlie_crop-1.jpg:
+    title: 'Helle Chr. Nissen-Lie Detlie'
+    alt: 'Helle Chr. Nissen-Lie Detlie'
+  people/john_beerens_crop.jpg:
+    title: 'John Beerens'
+    alt: 'John Beerens'
+  people/per-richard-olsen-e1517993766835-768x768.jpg:
+    title: 'Per Richard Olsen'
+    alt: 'Per Richard Olsen'
+  logo/kezzler-logotype.svg:
+    title: logotype
+    alt: kezzler
+  adobestock_46603059.jpeg:
+    title: 'FMCG puts high requirements on a serialization solutions'
+    alt: 'Fast moving consumer goods (FMCG) puts high requirements on a serialization and track & trace system. The serialization and track & trace system must be designed in such a way that it does not slow down over time, despite the massive production volumes.'
+  people/fullsizeoutput_39f9.jpg:
+    title: 'Kezzler CEO, Christine C. Akselsen'
+    alt: 'Kezzler Chief Executive Officer, Christine Akselsen'
+    focus: 56-50
+  people/fullsizeoutput_3807.jpg:
+    title: 'Kezzler CFO, Per Richard Olsen'
+    alt: 'Kezzler Chief Financial Officer, Per Richard Olsen'
+    focus: 44-43
+  people/fullsizeoutput_3826.jpg:
+    title: 'Kezzler CTO, Johan Borg'
+    alt: 'Kezzler Chief Technology Officer, Johan Borg'
+  people/fullsizeoutput_3994.jpg:
+    title: 'Kezzler Founder, Magnar Løken d.y.'
+    alt: 'Our founder, Magnar Løken d.y'
+    focus: 51-38
+  people/fullsizeoutput_3a58.jpg:
+    title: 'Kezzler Head of HR, Helle Chr. Nissen-Lie Detlie'
+    alt: 'Kezzler Head of Human Resources, Helle Chr. Nissen-Lie Detlie'
+    focus: 66-39
+  people/fullsizeoutput_3a72.jpg:
+    title: 'Kezzler Head of Sales, John Beerens'
+    focus: 48-36
+  people/copy-of-fullsizeoutput_37c1.jpeg:
+    title: 'Kezzler CCO, Cecilie Bergenstjerna'
+    alt: 'Kezzler Chief Commercial Officer'
+  people/cb_20190213_211109.jpg:
+    title: 'Kezzler CCO, Cecilie Bergenstjerna'
+    alt: 'Our Chief Commercial Officer, Cecilie Bergenstjerna'
+    focus: 38-36
+  people/copy-of-fullsizeoutput_3826.jpg:
+    focus: 47-36
+  news/img_6022.jpg:
+    title: 'Karen and John at AIPA'
+    alt: 'Karen Sun, China Representative & John Beerens, Head of Sales.'
+    focus: 51-31
+  news/img_6024.jpg:
+    focus: 63-65
+  news/Arca.jpg:
+    alt: 'Kezzler meeting with Arca'
+  links-nugget_coronavirus_v2_final.pdf:
+    title: 'Links Coronavirus PDF'
+  PDFs/links-nugget_coronavirus_v2_final.pdf:
+    title: 'LINKS Coronavirus PDF'
+  Resources/RTSL_Corona_FS_v4_providers.pdf:
+    title: 'Guidance on coronavirus and chronic diseases for providers'
+  PDFs/guidance-on-coronavirus-and-chronic-diseases-for-providers-(chinese).pdf:
+    title: 'Guidance on Coronavirus and Chronic Diseases for Providers (Chinese)'
+  PDFs/guidance-on-coronavirus-and-chronic-diseases-for-providers-arabic.pdf:
+    title: 'Guidance on Coronavirus and Chronic Diseases for Providers (Arabic)'
+  PDFs/guidance-on-coronavirus-and-chronic-diseases-for-patients-arabic.pdf:
+    title: 'Guidance on Coronavirus and Chronic Diseases for Patients (Arabic)'
+  PDFs/guidance-on-coronavirus-and-chronic-diseases-for-patients-(chinese).pdf:
+    title: 'Guidance on Coronavirus and Chronic Diseases for Patients (Chinese)'
+  PDFs/guidance-on-coronavirus-and-chronic-diseases-for-patients-thai.pdf:
+    title: 'Guidance on Coronavirus and Chronic Diseases for Patients (Thai)'
+  PDFs/rtsl_corona_fs_v4_patients_es.pdf:
+    title: 'Guidance on Coronavirus and Chronic Diseases for Patients (Spanish)'
+  PDFs/rtsl_corona_fs_v4_providers_es.pdf:
+    title: 'Guidance on Coronavirus and Chronic Diseases for Providers (Spanish)'
+  PDFs/rtsl_corona_fs_v4_patients_fr.pdf:
+    title: 'Guidance on Coronavirus and Chronic Diseases for Patients (French)'
+  PDFs/rtsl_corona_fs_v4_providers_fr.pdf:
+    title: 'Guidance on Coronavirus and Chronic Diseases for Providers (French)'
+  On-the-ground/Grantee_Nigeria_AFENET/comaand-hrh-bp-measurement-_dec-2019.jpg:
+    title: 'Comaand HRH BP measurement'
+    imageoptimizer:
+      original_size: 66297
+      current_size: 63026
+  On-the-ground/Grantee_Nigeria_AFENET/comaand-nfeltp-facilitator_feb-2020.jpg:
+    title: 'Comaand nfeltp facilitator'
+    imageoptimizer:
+      original_size: 445852
+      current_size: 358019
+  On-the-ground/Grantee_Nigeria_AFENET/comaand-phc-worker-certification_feb-2020.jpg:
+    imageoptimizer:
+      original_size: 171472
+      current_size: 143056
+  On-the-ground/Grantee_Nigeria_AFENET/comaand-stakeholder-mtg-photo_jan-2020.jpg:
+    title: 'Comaand stakeholder Meeting Jan 2020'
+    imageoptimizer:
+      original_size: 449578
+      current_size: 413815
+  On-the-ground/Grantee_Nigeria_AFENET/comaand-team-mtg_dec-2019.jpg:
+    imageoptimizer:
+      original_size: 108138
+      current_size: 104483
+  On-the-ground/Grantee_Nigeria_AFENET/comaand-tech-lead-bp-measurement-1_dec-2019.jpg:
+    imageoptimizer:
+      original_size: 142368
+      current_size: 135820
+  On-the-ground/Grantee_Nigeria_AFENET/comaand-technical-lead-with-moh-officials-nov-2019.jpg:
+    imageoptimizer:
+      original_size: 140762
+      current_size: 100017
+  On-the-ground/Grantee_Nigeria_AFENET/bp-commander-in-action_-feb-2020.jpg:
+    title: 'BP commander in action'
+    imageoptimizer:
+      original_size: 200730
+      current_size: 116605
+  On-the-ground/Grantee_Nigeria_AFENET/comaand-commissioner-of-health-at-stakeholder-mtg_jan-2020.jpg:
+    title: 'Comaand commissioner of health at stakeholder meeting 2020'
+    imageoptimizer:
+      original_size: 247906
+      current_size: 140002
+  On-the-ground/Grantee_Nigeria_AFENET/comaand-traditional-ruler-at-stakeholder-mtg_jan-2020.jpg:
+    imageoptimizer:
+      original_size: 263152
+      current_size: 148101
+  PDFs/arb-acei-ace2-and-covid19-031420_v3.pdf:
+    title: 'Statement on ACEis and ARBs and COVID-19 (English)'
+  PDFs/arb-acei-ace2-and-covid19-15mar20_spanish.pdf:
+    title: 'Statement on ACEis and ARBs and COVID-19 (Spanish)'
+  On-the-ground/Uruguay-Centro-Hospitalario-Pereira-Rossell/img-20180102-wa0002.jpg:
+    title: 'Uruguay Centro Hospitalario'
+  On-the-ground/Uruguay-Centro-Hospitalario-Pereira-Rossell/less-salt-more-life.pdf:
+    title: 'Less salt, more life'
+    description: |
+      <p>Description of this PDF file<br>
+      </p>
+      
+  PDFs/arb-acei-ace2-and-covid19-15mar20_portuguese.pdf:
+    title: 'Statement on ACEis and ARBs and COVID-19 (Portuguese)'
+  PDFs/covid-19-handout-04-links---hindi-final.pdf:
+    title: 'COVID-19: What to Know & What to Do (Hindi)'
+  PDFs/rtsl_corona_fs_hin_patients-final.pdf:
+    title: 'Guidance on Coronavirus and Chronic Diseases for Patients (Hindi)'
+  PDFs/rtsl_corona_fs_hin_providers-final.pdf:
+    title: 'Guidance on Coronavirus and Chronic Diseases for Providers (Hindi)'
+  PDFs/hypertension-management-during-covid.20200318.3.pdf:
+    title: 'FAQs on Hypertension Management During the COVID-19 Pandemic'
+  PDFs/rtsl_corona_fs_ben_providers-v1.pdf:
+    title: 'Guidance on Coronavirus and Chronic Diseases for Providers (Bengali)'
+  PDFs/rtsl_corona_fs_ben_patients-v1.pdf:
+    title: 'Guidance on Coronavirus and Chronic Diseases for Patients (Bengali)'
+  PDFs/who-covid-19-and-ncds.pdf:
+    title: 'Information note COVID-19 and NCDs from WHO'
+  PDFs/rtsl_corona_fs_kan_v1.pdf:
+    title: 'COVID-19: What to Know & What to Do (Kannada)'
+  PDFs/rtsl_corona_fs_kan_providers-v1-1585861658.pdf:
+    title: 'Guidance on Coronavirus and Chronic Diseases for Providers (Kannada)'
+  PDFs/rtsl_corona_fs_kan_patients-v1.pdf:
+    title: 'Guidance on Coronavirus and Chronic Diseases for Patients (Kannada)'
+  PDFs/rtsl_corona_fs_kan_providers-v1.pdf:
+    title: 'Guidance on Coronavirus and Chronic Diseases for Providers (Kannada)'
+  PDFs/rtsl_corona_fs_mar_providers.pdf:
+    title: 'Guidance on Coronavirus and Chronic Diseases for Providers (Marathi)'
+  PDFs/rtsl_corona_fs_mar_patients.pdf:
+    title: 'Guidance on Coronavirus and Chronic Diseases for Patients (Marathi)'
+  PDFs/rtsl_corona_fs_marathi.pdf:
+    title: 'COVID-19: What to Know & What to Do (Marathi)'
+  PDFs/rtsl_corona_fs_v4_providertr.PDF:
+    title: 'Guidance on Coronavirus and Chronic Diseases for Providers (Turkish)'
+  PDFs/rtsl_corona_fs_v4_patients_tr.PDF:
+    title: 'Guidance on Coronavirus and Chronic Diseases for Patients (Turkish)'
+  PDFs/rtsl_corona_fs_pun_providers-v2.pdf:
+    title: 'Guidance on Coronavirus and Chronic Diseases for Providers (Punjabi)'
+  PDFs/rtsl_corona_fs_pun_patients-v2.pdf:
+    title: 'Guidance on Coronavirus and Chronic Diseases for Patients (Punjabi)'
+  PDFs/rtsl_corona_fs_pun.pdf:
+    title: 'COVID-19: What to Know & What to Do (Punjabi)'
+  PDFs/rtsl_corona_fs_viet_v2.pdf:
+    title: 'COVID-19: What to Know & What to Do (Vietnamese)'
+  PDFs/rtsl_corona_fs_viet_providers-v2.pdf:
+    title: 'Guidance on Coronavirus and Chronic Diseases for Providers (Vietnamese)'
+  PDFs/rtsl_corona_fs_viet_patients-v2.pdf:
+    title: 'Guidance on Coronavirus and Chronic Diseases for Patients (Vietnamese)'
+  PDFs/htn-draft-training-module_simple-version_05122019-for-print.pdf:
+    title: 'IHCI Training Manual with Simple App'
+  PDFs/htn-draft-training-module_non-simple_05122019-for-print.pdf:
+    title: 'IHCI Training Manual without Simple App'
+  PDFs/cov069_primaryhealthcenterredesign_v3_final.pdf:
+    title: 'Safe Route to Care: Primary health center redesign during the COVID-19 pandemic'
+  PDFs/who-2019-ncov-sci_brief-ace-i-2020.1-eng.pdf:
+    title: 'WHO Scientific brief on COVID-19 and the use of ACE-Is and ARBs'
+  PDFs/rtsl-covid-chronicdisease_providers_updated.pdf:
+    title: 'Guidance on Coronavirus and Chronic Diseases for Providers (English)'
+  PDFs/rtsl_covid-chronicdisease_patients_updated-1589312709.pdf:
+    title: 'Guidance on Coronavirus and Chronic Diseases for Patients (English)'
+  PDFs/basic-setting-standards-of-shanghai-fever-clinic-(trial).pdf:
+    title: 'Basic Setting Standards of Shanghai Fever Clinic'
+  PDFs/cov039_telemedicine_v3_14may2020.pdf:
+    title: 'NEW! 7 Key Components Needed to Implement Telemedicine'
+  PDFs/rtsl_corona_fs_amh_providers-v2.pdf:
+    title: 'NEW! Guidance on Coronavirus and Chronic Diseases for Providers (Amharic)'
+  PDFs/rtsl_corona_fs_amh_patients-v1.pdf:
+    title: 'NEW! Guidance on Coronavirus and Chronic Diseases for Patients (Amharic)'
+  PDFs/rtsl_corona_tig_providers_v2.pdf:
+    title: 'NEW! Guidance on Coronavirus and Chronic Diseases for Providers (Tigrigna)'
+  PDFs/rtsl_corona_tig_patients_v2.pdf:
+    title: 'NEW! Guidance on Coronavirus and Chronic Diseases for Patients (Tigrigna)'
+  PDFs/rtsl_corona_soma_providers_v1.pdf:
+    title: 'NEW! Guidance on Coronavirus and Chronic Diseases for Providers (Somaligna)'
+  PDFs/rtsl_corona_soma_patients_v2.pdf:
+    title: 'NEW! Guidance on Coronavirus and Chronic Diseases for Patients (Somaligna)'
+  PDFs/rtsl_corona_fs_oro_patients-v2.pdf:
+    title: 'NEW! Guidance on Coronavirus and Chronic Diseases for Patients (Oromiffa)'
+  PDFs/rtsl_corona_fs_oro_providers-v2.pdf:
+    title: 'NEW! Guidance on Coronavirus and Chronic Diseases for Providers (Oromiffa)'
+  PDFs/links-webinar_-air-pollution_-d-prabhakaran_18jun20.pdf:
+    title: 'LINKS Webinar Presentation on Air pollution by Dr Prabhakaran'
+  PDFs/salt-reduction-guide-web.pdf:
+    title: 'Salt Reduction Guide for Patients in India'
+  People/tom-frieden-testifies.jpg:
+    title: 'Tom Frieden, President and CEO of Resolve to Save Lives'
+    alt: 'Tom Frieden, President and CEO of Resolve to Save Lives'
+  Toolkit/mou_template_final.docx:
+    title: 'MOU Template'
+  PDFs/ethiopia-concept-note-and-agenda_redacted.pdf:
+    title: 'Ethiopia Hypertension Prevention and Control project Consensus Planning Meeting Agenda (REDACTED)'
+  PDFs/tot-_agenda_india.docx:
+    title: 'IHCI ToT agenda_November 2019'
+  PDFs/a4-hypertension-treatment-card.pdf:
+    title: 'IHCI non-digital hypertension patient treatment card'
+  PDFs/hypertension-register_non-simple.docx:
+    title: 'Hypertension registry, annual & quarterly report (non-digital)'
+  PDFs/strategies-to-prevent-and-reduce-LTFU.pptx:
+    title: 'IHCI Strategies to prevent and reduce loss to follow up'
+  PDFs/bp_monitors-tender_sample.pdf:
+    title: 'SAMPLE Required specifications of professional BP monitors and bid requirements'
+  PDFs/rfp_bp-devices_example.docx:
+    title: 'Sample Request for Proposal for blood pressure devices'
+  PDFs/hypertensionprotocol_template_preferred_letter.pdf:
+    title: 'PAHO Hypertension Treatment Preferred Protocol Template'
+  PDFs/hypertensionprotocol_template_current_letter.pdf:
+    title: 'PAHO Hypertension Treatment Current Protocol Template'
+  PDFs/pmac-keynote-speech-slides_final.pdf:
+    title: 'PMAC 2019 Keynote Speech Slides'
+  PDFs/HTN-Facility-Checklist_Follow-up.docx:
+    title: 'Supervisory Visit Facility Form'

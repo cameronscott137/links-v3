@@ -1,0 +1,491 @@
+title: Home
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          width: 33
+          localizable: true
+          display: Title
+          instructions: 'Longer page title'
+      -
+        handle: slug
+        field:
+          type: text
+          width: 33
+          instructions: 'The unique part of the url, shorter is better'
+      -
+        handle: nav_title
+        field:
+          type: text
+          instructions: 'The shorter title displayed in the navigation'
+          width: 33
+          display: 'Navigation Title'
+      -
+        handle: hero_image
+        field:
+          type: assets
+          container: main
+          folder: Hero
+          restrict: true
+          max_files: 1
+          mode: grid
+          instructions: 'Large header image'
+          width: 33
+          display: 'Hero Image'
+      -
+        handle: hero_text
+        field:
+          type: text
+          instructions: 'Large headline overlaid on hero image'
+          width: 66
+          display: 'Hero Text'
+      -
+        handle: page_content
+        field:
+          type: replicator
+          sets:
+            one_column_block:
+              display: 'One Column Block'
+              fields:
+                -
+                  handle: block_content
+                  field:
+                    type: bard
+                    restrict_assets: false
+                    display: Content
+                    container: main
+                    save_html: true
+                    buttons:
+                      - bold
+                      - italic
+                      - unorderedlist
+                      - orderedlist
+                      - html
+                      - image
+                      - quote
+                      - codeblock
+                      - h1
+                      - h2
+                      - h3
+                      - h4
+                      - h5
+                      - h6
+                      - anchor
+                -
+                  handle: class
+                  field:
+                    type: checkboxes
+                    options:
+                      centered: 'Centered Heading'
+                      intro: 'Large Intro Text'
+                      reverse: 'White on Red'
+                    display: 'Layout Features'
+            two_column_block:
+              display: 'Two Column Block'
+              fields:
+                -
+                  handle: column_1
+                  field:
+                    type: bard
+                    restrict_assets: false
+                    width: 50
+                    display: 'Column 1'
+                    container: main
+                    folder: /
+                    save_html: true
+                    buttons:
+                      - bold
+                      - italic
+                      - unorderedlist
+                      - orderedlist
+                      - html
+                      - image
+                      - quote
+                      - codeblock
+                      - h1
+                      - h2
+                      - h3
+                      - h4
+                      - h5
+                      - h6
+                      - anchor
+                -
+                  handle: column_2
+                  field:
+                    type: bard
+                    restrict_assets: false
+                    width: 50
+                    display: 'Column 2'
+                    container: main
+                    folder: /
+                    save_html: true
+                    buttons:
+                      - bold
+                      - italic
+                      - unorderedlist
+                      - orderedlist
+                      - html
+                      - image
+                      - quote
+                      - codeblock
+                      - h1
+                      - h2
+                      - h3
+                      - h4
+                      - h5
+                      - h6
+                      - anchor
+            three_column_block:
+              display: 'Three Column Block'
+              fields:
+                -
+                  handle: column_1
+                  field:
+                    type: bard
+                    restrict_assets: false
+                    width: 33
+                    display: 'Column 1'
+                    container: main
+                    folder: /
+                    save_html: true
+                    buttons:
+                      - bold
+                      - italic
+                      - unorderedlist
+                      - orderedlist
+                      - html
+                      - image
+                      - quote
+                      - codeblock
+                      - h1
+                      - h2
+                      - h3
+                      - h4
+                      - h5
+                      - h6
+                      - anchor
+                -
+                  handle: column_2
+                  field:
+                    type: bard
+                    restrict_assets: false
+                    width: 33
+                    display: 'Column 2'
+                    container: main
+                    folder: /
+                    save_html: true
+                    buttons:
+                      - bold
+                      - italic
+                      - unorderedlist
+                      - orderedlist
+                      - html
+                      - image
+                      - quote
+                      - codeblock
+                      - h1
+                      - h2
+                      - h3
+                      - h4
+                      - h5
+                      - h6
+                      - anchor
+                -
+                  handle: column_3
+                  field:
+                    type: bard
+                    restrict_assets: false
+                    width: 33
+                    display: 'Column 3'
+                    container: main
+                    folder: /
+                    save_html: true
+                    buttons:
+                      - bold
+                      - italic
+                      - unorderedlist
+                      - orderedlist
+                      - html
+                      - image
+                      - quote
+                      - codeblock
+                      - h1
+                      - h2
+                      - h3
+                      - h4
+                      - h5
+                      - h6
+                      - anchor
+            four_column_block:
+              display: 'Four Column Block'
+              fields:
+                -
+                  handle: column_1
+                  field:
+                    type: bard
+                    restrict_assets: false
+                    width: 25
+                    display: 'Column 1'
+                    container: main
+                    folder: /
+                    save_html: true
+                    buttons:
+                      - bold
+                      - italic
+                      - unorderedlist
+                      - orderedlist
+                      - html
+                      - image
+                      - quote
+                      - codeblock
+                      - h1
+                      - h2
+                      - h3
+                      - h4
+                      - h5
+                      - h6
+                      - anchor
+                -
+                  handle: column_2
+                  field:
+                    type: bard
+                    restrict_assets: false
+                    width: 25
+                    display: 'Column 2'
+                    container: main
+                    folder: /
+                    save_html: true
+                    buttons:
+                      - bold
+                      - italic
+                      - unorderedlist
+                      - orderedlist
+                      - html
+                      - image
+                      - quote
+                      - codeblock
+                      - h1
+                      - h2
+                      - h3
+                      - h4
+                      - h5
+                      - h6
+                      - anchor
+                -
+                  handle: column_3
+                  field:
+                    type: bard
+                    restrict_assets: false
+                    width: 25
+                    display: 'Column 3'
+                    container: main
+                    folder: /
+                    save_html: true
+                    buttons:
+                      - bold
+                      - italic
+                      - unorderedlist
+                      - orderedlist
+                      - html
+                      - image
+                      - quote
+                      - codeblock
+                      - h1
+                      - h2
+                      - h3
+                      - h4
+                      - h5
+                      - h6
+                      - anchor
+                -
+                  handle: column_4
+                  field:
+                    type: bard
+                    restrict_assets: false
+                    width: 25
+                    display: 'Column 4'
+                    container: main
+                    folder: /
+                    save_html: true
+                    buttons:
+                      - bold
+                      - italic
+                      - unorderedlist
+                      - orderedlist
+                      - html
+                      - image
+                      - quote
+                      - codeblock
+                      - h1
+                      - h2
+                      - h3
+                      - h4
+                      - h5
+                      - h6
+                      - anchor
+            five_column_block:
+              display: 'Five Column Block'
+              fields:
+                -
+                  handle: heading
+                  field:
+                    type: text
+                    display: Heading
+                -
+                  handle: column_1
+                  field:
+                    type: bard
+                    restrict_assets: false
+                    width: 33
+                    display: 'Column 1'
+                    container: main
+                    folder: /
+                    save_html: true
+                    buttons:
+                      - bold
+                      - italic
+                      - unorderedlist
+                      - orderedlist
+                      - html
+                      - image
+                      - quote
+                      - codeblock
+                      - h1
+                      - h2
+                      - h3
+                      - h4
+                      - h5
+                      - h6
+                      - anchor
+                -
+                  handle: column_2
+                  field:
+                    type: bard
+                    restrict_assets: false
+                    width: 33
+                    display: 'Column 2'
+                    container: main
+                    folder: /
+                    save_html: true
+                    buttons:
+                      - bold
+                      - italic
+                      - unorderedlist
+                      - orderedlist
+                      - html
+                      - image
+                      - quote
+                      - codeblock
+                      - h1
+                      - h2
+                      - h3
+                      - h4
+                      - h5
+                      - h6
+                      - anchor
+                -
+                  handle: column_3
+                  field:
+                    type: bard
+                    restrict_assets: false
+                    width: 33
+                    display: 'Column 3'
+                    container: main
+                    save_html: true
+                    buttons:
+                      - bold
+                      - italic
+                      - unorderedlist
+                      - orderedlist
+                      - html
+                      - image
+                      - quote
+                      - codeblock
+                      - h1
+                      - h2
+                      - h3
+                      - h4
+                      - h5
+                      - h6
+                      - anchor
+                -
+                  handle: column_4
+                  field:
+                    type: bard
+                    restrict_assets: false
+                    width: 33
+                    display: 'Column 4'
+                    container: main
+                    folder: /
+                    save_html: true
+                    buttons:
+                      - bold
+                      - italic
+                      - unorderedlist
+                      - orderedlist
+                      - html
+                      - image
+                      - quote
+                      - codeblock
+                      - h1
+                      - h2
+                      - h3
+                      - h4
+                      - h5
+                      - h6
+                      - anchor
+                -
+                  handle: column_5
+                  field:
+                    type: bard
+                    restrict_assets: false
+                    width: 33
+                    display: 'Column 5'
+                    container: main
+                    folder: /
+                    save_html: true
+                    buttons:
+                      - bold
+                      - italic
+                      - unorderedlist
+                      - orderedlist
+                      - html
+                      - image
+                      - quote
+                      - codeblock
+                      - h1
+                      - h2
+                      - h3
+                      - h4
+                      - h5
+                      - h6
+                      - anchor
+                -
+                  handle: class
+                  field:
+                    type: checkboxes
+                    options:
+                      centered: 'Centered Heading'
+                      reverse: 'White on Red'
+                    display: 'Layout Features'
+          display: 'Page Content'
+  page_settings:
+    display: 'Page Settings'
+    fields:
+      -
+        handle: hide_from_top_nav
+        field:
+          type: toggle
+          width: 25
+          display: 'Hide from top nav'
+      -
+        handle: template
+        field:
+          type: template
+          width: 25
+          display: Template
+taxonomies: true

@@ -1,0 +1,10 @@
+title: 'Toolkit - Trans fat elimination'
+template: toolkit-single
+route: 'toolkit/hypertension-transfat/{slug}'
+taxonomies:
+  - country
+  - resource-category
+  - resource-language
+  - resource-region
+  - resource-source
+  - resource-type

@@ -1,0 +1,51 @@
+sections:
+  main:
+    display: Link
+    fields:
+      -
+        handle: link_url
+        field:
+          type: text
+          width: 50
+          display: 'Link URL'
+          instructions: 'If the link is external, enter the URL'
+      -
+        handle: description
+        field:
+          type: text
+          instructions: Optional
+          width: 50
+          display: Description
+      -
+        handle: link_thumbnail
+        field:
+          type: assets
+          container: main
+          folder: Toolkit
+          restrict: false
+          max_files: 1
+          mode: grid
+          instructions: 'An optimised jpg 464x600px'
+          width: 50
+          display: 'Link Thumbnail'
+      -
+        handle: attachment
+        field:
+          type: assets
+          container: main
+          folder: PDFs
+          restrict: true
+          max_files: 1
+          mode: grid
+          instructions: 'If you upload a file, you do not need to enter a Link URL'
+          width: 50
+          display: Attachment
+      -
+        handle: pinned
+        field:
+          type: toggle
+          instructions: 'Pin this item to the top as a Key Resource?'
+          width: 25
+          display: 'Key Resource'
+taxonomies: true
+title: Toolkit-Links

@@ -1,0 +1,16 @@
+<main>
+    <div class="inner">
+    <h1>{{ title }}</h1>
+
+    {{ content }}
+    
+    {{ partial:content_types }}
+
+        <div class="event-list">
+    {{ collection from="events"}}
+        {{ partial:blocks/event }}
+    {{ /collection }}
+    </div>
+    
+    </div>
+</main>

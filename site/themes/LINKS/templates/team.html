@@ -1,0 +1,27 @@
+<main>
+    <div class="inner">
+    <h1>{{ title }}</h1>
+    
+   {{ page_content }}
+       <div class="intro">{{ text_block }}</div>
+   {{ /page_content }}
+
+        <div class="grid team-list">
+        {{ collection from="team-list" }}
+        
+            <div class="person">
+                {{ glide:generate src="{photo}" width="400" height="400" fit="crop" }}
+                  <img src="{{ url }}" width="{{ width }}" height="{{ height }}" alt="Photo of {{ title }}" />
+                {{ /glide:generate }}
+                
+                <h4>{{ title }}</h4>
+                <p>{{ job_title }}</p>
+                <p class="location">{{ location }}</p>
+                <p>{{ if link_to_biography=="true" }}<a href="/about/team/{{ slug }}">Biography</a>{{ /if }}</p>
+            </div>
+    {{ /collection }}
+    
+    </div>
+    
+    </div>
+</main>

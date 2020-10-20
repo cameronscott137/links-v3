@@ -1,0 +1,82 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          display: Title
+          localizable: true
+      -
+        handle: start_date
+        field:
+          type: date
+          allow_blank: false
+          allow_time: true
+          require_time: false
+          earliest_date: 'January 1, 2019'
+          width: 50
+          display: 'Start Date'
+      -
+        handle: end_date
+        field:
+          type: date
+          allow_blank: false
+          allow_time: true
+          require_time: false
+          earliest_date: 'January 1, 2019'
+          width: 50
+          display: 'End Date'
+      -
+        handle: description
+        field:
+          type: bard
+          container: main
+          folder: /
+          restrict_assets: false
+          display: Description
+          save_html: true
+          buttons:
+            - bold
+            - italic
+            - unorderedlist
+            - orderedlist
+            - html
+            - image
+            - quote
+            - codeblock
+            - h1
+            - h2
+            - h3
+            - h4
+            - h5
+            - h6
+            - anchor
+      -
+        handle: action_button
+        field:
+          type: toggle
+          width: 33
+          display: 'Action Button'
+          instructions: 'Enables a call to action button for the post'
+      -
+        handle: action_button_link
+        field:
+          type: text
+          width: 33
+          display: 'Action Button Link'
+          instructions: 'URL for the button'
+          show_when:
+            action_button: '1'
+      -
+        handle: action_button_text
+        field:
+          type: text
+          width: 33
+          display: 'Action Button Text'
+          instructions: 'Text to be shown on the button'
+          show_when:
+            action_button: '1'
+taxonomies: true
+title: Events

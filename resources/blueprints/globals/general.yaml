@@ -1,0 +1,24 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: site_name
+        field:
+          type: text
+          display: 'Site Name'
+      -
+        handle: site_logo
+        field:
+          type: assets
+          container: main
+          folder: /
+          restrict: false
+          display: 'Site Logo'
+      -
+        handle: strapline
+        field:
+          type: text
+          display: Strapline
+taxonomies: true
+title: 'Default Globals'

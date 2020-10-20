@@ -1,0 +1,48 @@
+sections:
+  main:
+    display: Main
+    fields:
+      title:
+        type: text
+        display: Title
+        localizable: true
+      organization:
+        type: text
+        display: Organization
+        width: 50
+      job_title:
+        type: text
+        display: 'Job Title'
+        width: 50
+      official_title:
+        type: text
+        display: 'Official Title'
+        width: 50
+      email_address:
+        type: text
+        display: 'Email Address'
+        width: 50
+      post_nominal_letters:
+        type: text
+        display: 'Post Nominal Letters'
+        width: 50
+      works_in:
+        type: text
+        width: 50
+        display: 'Works in'
+      link_to_biography:
+        type: text
+        display: 'Link to Biography'
+      expertise:
+        options:
+          hypertension: 'Hypertension Control'
+          salt: 'Salt Reduction'
+          transfat: 'Elimination of trans fat'
+        type: checkboxes
+        display: Expertise
+      disclosure:
+        type: textarea
+        display: Disclosure
+taxonomies: true
+title: Networking
+create_title: 'Add a new member'

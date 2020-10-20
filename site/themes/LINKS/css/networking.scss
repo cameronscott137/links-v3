@@ -1,0 +1,94 @@
+
+/* Networking List */
+
+.country-list {
+    column-count: 2;
+    list-style-type: none;
+    column-gap: 1rem;
+}
+
+@media screen and (min-width: 40rem) {
+.country-list {
+    column-count: 3;
+    }
+}
+
+@media screen and (min-width: 50rem) {
+.country-list {
+    column-count: 4;
+    }
+}
+
+.country-list li+li {
+    margin-top: 0.5rem;
+}
+
+.country-list li+li:before {
+    margin-top: 2rem;
+}
+
+.country-list li:before {
+    content: attr(title);
+    display: block;
+    font-weight: 600;
+    font-size: 1.5rem;
+    break-insde:avoid;
+}
+
+.a+.a::before,
+.b+.b::before,
+.c+.c::before,
+.d+.d::before,
+.e+.e::before,
+.f+.f::before,
+.g+.g::before,
+.h+.h::before,
+.i+.i::before,
+.j+.j::before,
+.k+.k::before,
+.l+.l::before,
+.m+.m::before,
+.n+.n::before,
+.o+.o::before,
+.p+.p::before,
+.q.q::before,
+.r+.r::before,
+.s+.s::before,
+.t+.t::before,
+.u+.u::before,
+.v+.v::before,
+.w+.w::before,
+.x+.x::before,
+.y+.y::before,
+.z+.z::before
+ {
+    display: none;
+}
+
+.network-item {
+    background: #fff;
+    text-align: left;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.05);           
+}
+
+.network-item *+*{
+    margin-top: 0;
+}
+
+.network-item h4+p,
+.network-item p.tags {
+    margin-top: 0.5rem;
+}
+
+.network-info {
+    font-size: 0.85rem;
+    margin-top: 1.5rem;
+}
+
+.network-info th {
+    vertical-align: top;
+    padding-right: 1rem;
+    color: #777;
+}

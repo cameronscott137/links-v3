@@ -1,0 +1,14 @@
+routes:
+  '/members/networking/{slug}': members/country
+collections:
+  grantees: '/about/grantees/{slug}'
+  networking: '/members/networking/{country}'
+  webinars: '/webinars/{slug}'
+  toolkit-hypertension: 'toolkit/hypertension-control/{slug}'
+  toolkit-salt: 'toolkit/hypertension-salt/{slug}'
+  toolkit-transfat: 'toolkit/hypertension-transfat/{slug}'
+  team-list: '/about/team/{slug}'
+  community_news: '/news/{slug}'
+  sodium: '/toolkit/healthy-food-procurement/{slug}'
+taxonomies:
+  country: '/members/networking/{slug}'

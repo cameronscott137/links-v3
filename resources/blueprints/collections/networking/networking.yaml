@@ -1,0 +1,67 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          display: Title
+          localizable: true
+      -
+        handle: organization
+        field:
+          type: text
+          display: Organization
+          width: 50
+      -
+        handle: job_title
+        field:
+          type: text
+          display: 'Job Title'
+          width: 50
+      -
+        handle: official_title
+        field:
+          type: text
+          display: 'Official Title'
+          width: 50
+      -
+        handle: email_address
+        field:
+          type: text
+          display: 'Email Address'
+          width: 50
+      -
+        handle: post_nominal_letters
+        field:
+          type: text
+          display: 'Post Nominal Letters'
+          width: 50
+      -
+        handle: works_in
+        field:
+          type: text
+          width: 50
+          display: 'Works in'
+      -
+        handle: link_to_biography
+        field:
+          type: text
+          display: 'Link to Biography'
+      -
+        handle: expertise
+        field:
+          type: checkboxes
+          options:
+            hypertension: 'Hypertension Control'
+            salt: 'Salt Reduction'
+            transfat: 'Elimination of trans fat'
+          display: Expertise
+      -
+        handle: disclosure
+        field:
+          type: textarea
+          display: Disclosure
+taxonomies: true
+title: Networking

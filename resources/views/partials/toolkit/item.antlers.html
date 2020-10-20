@@ -1,0 +1,19 @@
+     {{ if link_url }}  
+        <div class="mix{{ resource-category }} {{ slug }}{{ /resource-category }}{{ resource-type }} {{ slug }}{{ /resource-type }}{{ resource-region }} {{ slug }}{{ /resource-region }}{{ resource-language }} {{ slug }}{{ /resource-language }}{{ resource-source }} {{ slug }}{{ /resource-source }}{{ if pinned=="true" }} key{{ /if }}">
+        
+        {{ if pinned=="true" }}
+                       <p class="key-r">Key Resource</p>
+        {{ /if }}
+                       
+        {{ if attachment }}
+            <p><a href="{{ attachment }}" target="_blank"><img src="{{ link_thumbnail }}" alt="{{ title }}" >{{ title }}</a></p>
+        
+        {{ else }}
+            <p><a href="{{ link_url }}" target="_blank"><img src="{{ link_thumbnail }}" alt="{{ title }}" >{{ title }}</a></p>
+        {{ /if }}
+        {{ if description }}<div class="description">{{ description }}</div>{{ /if }}
+              
+     </div> 
+     
+     {{ else }}
+     {{ /if }}

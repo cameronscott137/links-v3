@@ -1,0 +1,8 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="menu">
+<rect id="topbar" x="2" y="5" width="20" height="2" fill="#E43721"/>
+<rect id="cross2" x="2" y="11" width="20" height="2" fill="#E43721"/>
+<rect id="cross1" x="2" y="11" width="20" height="2" fill="#E43721"/>
+<rect id="botbar" x="2" y="17" width="20" height="2" fill="#E43721"/>
+</g>
+</svg>

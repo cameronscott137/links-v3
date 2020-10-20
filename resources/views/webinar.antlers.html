@@ -1,0 +1,34 @@
+
+<main>
+    <div class="inner content">
+    
+        <div class="webinars-list">
+            <div class="webinar">
+                <h3>Webinar:</h3>
+    <h1 class="">{{ title }}</h1>   
+    
+            <h3>{{ date format="d M Y" }}</h3>
+                      
+            {{ if video_embed }}
+            
+          <div class="videoWrapper videoWrapper169 js-videoWrapper">       
+            <iframe class="videoIframe js-videoIframe" src="" frameborder="0" allowTransparency="true" allowfullscreen data-src="{{ video_embed | embed_url }}?autoplay=1& modestbranding=1&rel=0&hl=sv"></iframe>    
+            <button class="videoPoster js-videoPoster" style="background-image:url({{ webinar_image }});">Play video</button>
+          </div>           
+            
+            {{ else }}
+ 
+             <a href="{{ image_link }}" target="_blank"><img src="{{ webinar_image }}">
+            </a>
+                    
+            {{ /if }}
+            
+            {{ description }}
+            
+        </div>
+        </div>
+
+    
+    
+    </div>
+</main>

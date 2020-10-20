@@ -1,0 +1,34 @@
+{{ cache for="1 day" scope="page" }}
+<main>
+    <div class="inner">
+        <div class="grid toolkit-header">    
+            <img src="{{ section_icon }}" class="header-image">              
+            <div>
+                <h3>Links toolkit:</h3>   
+                <h1>{{ title }}</h1>
+            </div>
+        </div>
+    
+    <div class="toolkit">	
+              
+        {{ partial:toolkit/sidebar }}
+    
+        {{ collection from="{toolkit_collection}" pinned:is="true" sort="title:asc" }}
+            {{ partial:toolkit/item }}
+        {{ /collection }}
+ 
+         {{ collection from="{toolkit_collection}" pinned:is="false" sort="title:asc" }}
+            {{ partial:toolkit/item }}
+        {{ /collection }}
+           
+    </div>
+    
+</div>    <!-- End of Toolkit -->
+
+
+{{ partial:toolkit/script }}
+    
+    </div>
+</main>
+
+{{ /cache }}

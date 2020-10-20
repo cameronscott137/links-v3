@@ -1,0 +1,53 @@
+sections:
+  main:
+    display: Main
+    fields:
+      title:
+        display: Title
+        type: text
+        localizable: true
+      start_date:
+        allow_blank: false
+        allow_time: true
+        require_time: false
+        earliest_date: 'January 1, 2019'
+        type: date
+        width: 50
+        display: 'Start Date'
+      end_date:
+        allow_blank: false
+        allow_time: true
+        require_time: false
+        earliest_date: 'January 1, 2019'
+        type: date
+        width: 50
+        display: 'End Date'
+      description:
+        settings: Standard
+        container: main
+        folder: /
+        restrict_assets: false
+        type: redactor
+        display: Description
+      action_button:
+        type: toggle
+        width: 33
+        display: 'Action Button'
+        instructions: 'Enables a call to action button for the post'
+      action_button_link:
+        type: text
+        width: 33
+        display: 'Action Button Link'
+        instructions: 'URL for the button'
+        show_when:
+          action_button: true
+      action_button_text:
+        type: text
+        width: 33
+        display: 'Action Button Text'
+        instructions: 'Text to be shown on the button'
+        show_when:
+          action_button: true
+taxonomies: true
+title: Events
+create_title: 'Add a new event'

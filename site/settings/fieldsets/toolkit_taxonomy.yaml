@@ -1,0 +1,12 @@
+sections:
+  main:
+    display: Main
+    fields:
+      category_icon:
+        container: main
+        folder: /
+        restrict: false
+        type: assets
+        display: 'Category Icon'
+taxonomies: true
+title: 'Toolkit Taxonomy'

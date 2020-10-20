@@ -1,0 +1,335 @@
+{{ page_content }}
+
+     {{ if type == "form_block" }}
+
+
+     {{ if form == "membership" }}
+     <section class="membership-form">
+         <div class="inner">
+             <div class="c-1">
+         <h1>Application Form</h1>
+            {{ form:create in="membership" redirect="/join/thanks" }}
+
+            {{ if errors }}
+                <div class="alert alert-danger">
+                    {{ errors }}
+                        {{ value }}<br>
+                    {{ /errors }}
+                </div>
+            {{ /if }}
+
+            {{ if success }}
+                <div class="alert alert-success">
+                    Form was submitted successfully.
+                </div>
+
+              {{ else }}
+
+
+            <div class="form-group">
+                <label>First Name</label>
+                <input type="text" name="first_name" value="{{ old:first_name }}" />
+            </div>
+
+             <div class="form-group">
+                <label>Last Name</label>
+                <input type="text" name="last_name" value="{{ old:last_name }}" />
+            </div>
+
+               <input type="text" name="given" class="hp" />
+
+              <div class="form-group">
+                <label>Title</label>
+                <p class="help">For example, Dr or Prof</p>
+                <input type="text" name="title" value="{{ old:title }}" />
+            </div>
+
+              <div class="form-group">
+                <label>Degrees (Optional)</label>
+                <input type="text" name="degrees" value="{{ old:degrees }}" />
+            </div>
+
+                <div class="form-group">
+                <label>Position within your organization</label>
+                <input type="text" name="position" value="{{ old:position }}" />
+            </div>
+
+               <div class="form-group">
+                <label>Name of your organization</label>
+                <input type="text" name="organization" value="{{ old:organization }}" />
+            </div>
+
+                 <div class="form-group">
+                <label>Email address</label>
+                <input type="email" name="email_address" value="{{ old:email_address }}" />
+            </div>
+
+                 <div class="form-group">
+                <label>Phone number</label>
+                <input type="tel" name="phone_number" value="{{ old:phone_number }}" />
+            </div>
+
+                 <div class="form-group">
+                <label>Focus of cardiovascular work*</label>
+                <p class="help">Choose all that apply</p>
+                <div class="checkboxes horizontal">
+                <label><input type="checkbox" name="ht_control" />Hypertension control</label>
+
+                 <label><input type="checkbox" name="sodium" />Salt reduction</label>
+
+                <label><input type="checkbox" name="tf_elimination" />Elimination of trans fat</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Country(ies) in which you work*</label>
+                <input type="text" name="where_you_work" value="{{ old:where_you_work }}" />
+            </div>
+
+
+            <div class="form-group">
+                <label>City where you are based*</label>
+                <input type="text" name="city" value="{{ old:city }}" />
+            </div>
+
+            <div class="form-group">
+                <label>Country where you are based*</label>
+                <input type="text" name="country" value="{{ old:country }}" />
+            </div>
+
+            <div class="form-group">
+                <label>Link to your bio (optional)</label>
+                <input type="text" name="bio" value="{{ old:bio }}" placeholder="http://" />
+            </div>
+
+
+                  <div class="form-group">
+                <label>Are you affiliated with or supported by any of the following industries (choose all that apply)? *</label>
+                <p class="help">Individuals affiliated with tobacco, weapons, sugary drinks and alcoholic beverages are ineligible for membership.</p>
+
+                <div class="checkboxes vertical">
+
+                <label><input type="checkbox" name="tobacco" value="1. Tobacco"> 1. Tobacco</label>
+
+                 <label><input type="checkbox" name="weapons" value="2. Weapons"> 2. Weapons</label>
+
+                <label><input type="checkbox" name="sugary_drinks" value="3. Sugary drinks"> 3. Sugary drinks</label>
+
+                <label><input type="checkbox" name="alcohol" value="4. Alcoholic beverages"> 4. Alcoholic beverages</label>
+
+                <label><input type="checkbox" name="pharma" value="5. Pharmaceuticals, medical devices, for-profit healthcare, health insurance, food, beverage or related industries"> 5. Pharmaceuticals, medical devices, for-profit healthcare, health insurance, food, beverage or related industries</label>
+
+                <label><input type="checkbox" name="not-affiliated" value="6. I am not affiliated with nor supported by any of the above industries"> 6. I am not affiliated with nor supported by any of the above industries</label>
+
+
+        </div>
+
+
+         </div>
+
+
+            <div class="form-group">
+                <label>If you selected affiliation #5, please summarize the nature and duration of the affiliation/support, and confirm whether it is ongoing</label>
+                <input type="text" name="duration" value="{{ old:duration }}"  />
+            </div>
+
+                 <div class="form-group">
+                <label>Do you consent to sharing your contact information?† *</label>
+                <p class="help">By consenting, you agree to make your contact information available to other LINKS members for the purpose of networking and peer-to-peer contact. The LINKS team may also contact you using your email address.</p>
+                <div class="checkboxes horizontal">
+                    <label><input type="checkbox" name="consent" />I agree</label>
+                </div>
+                </div>
+            <div class="form-group">
+                <button class="button">Submit</button>
+            </div>
+
+            {{ /if }}
+
+        {{ /form:create }}
+        </div>
+        </div>
+        </div>
+        </section>
+    {{ /if }}
+
+    {{ /if }}
+
+     {{ if type == "simple_text_block" }}
+            <div>{{ text_block }}</div>
+    {{ /if }}
+
+
+    {{ if type == "one_column_block" }}
+    <section{{ if class }} class="{{ class }}{{ value }} {{ /class }}"{{ /if }}>
+        <div class="inner content">
+            <div class="c-1">{{ block_content }}</div>
+        </div>
+    </section>
+    {{ /if }}
+
+    {{ if type == "two_column_block" }}
+    <section>
+        <div class="inner content">
+             <div class="grid c-2">
+                <div>
+                    {{ column_1 }}
+                </div>
+                 <div>
+                    {{ column_2 }}
+                </div>
+            </div>
+        </div>
+    </section>
+    {{ /if }}
+
+    {{ if type == "three_column_block" }}
+    <section>
+        <div class="inner content">
+            <div class="grid c-3">
+                <div>
+                    {{ column_1 }}
+                </div>
+                 <div>
+                    {{ column_2 }}
+                </div>
+                 <div>
+                    {{ column_3 }}
+                </div>
+            </div>
+        </div>
+    </section>
+    {{ /if }}
+
+    {{ if type == "four_column_block" }}
+    <section>
+        <div class="inner content">
+            <div class="grid c-4">
+                <div>
+                    {{ column_1 }}
+                </div>
+                 <div>
+                    {{ column_2 }}
+                </div>
+                 <div>
+                    {{ column_3 }}
+                </div>
+                  <div>
+                    {{ column_4 }}
+                </div>
+            </div>
+        </div>
+    </section>
+    {{ /if }}
+
+    {{ if type == "five_column_block" }}
+    <section{{ if class }} class="{{ class }}{{ value }} {{ /class }}"{{ /if }}>
+        <div class="inner content">
+            {{ if heading }}<h2>{{ heading }}</h2>{{ /if}}
+            <div class="grid c-5">
+                <div>
+                    {{ column_1 }}
+                </div>
+                 <div>
+                    {{ column_2 }}
+                </div>
+                 <div>
+                    {{ column_3 }}
+                </div>
+                  <div>
+                    {{ column_4 }}
+                </div>
+                  <div>
+                    {{ column_5 }}
+                </div>
+            </div>
+        </div>
+    </section>
+    {{ /if }}
+
+      {{ if type == "video" }}
+    <section>
+        <div class="inner content">
+            <p class="video">
+                {{ video }}
+            </p>
+        </div>
+    </section>
+    {{ /if }}
+
+    {{ if type == "asset_gallery" }}
+
+    <div class="asset-gallery">
+
+         <h3>{{ gallery_heading }}</h3>
+
+             <div class="grid gallery">
+
+                 {{ assets:assets_selection }}
+                    <div class="gallery-item {{ extension }}">
+
+                    {{ if extension=="pdf"}}
+                        <a href="{{ url }}">
+                            {{ if thumbnail }}
+                                <img src="{{ thumbnail }}" title="{{ title PDF }}">
+                            {{ else }}
+                                <img src="/assets/Icons/pdf.svg" title="{{ title PDF }}">
+                            {{ /if }}
+                            Download: {{ title }} (PDF {{ size_megabytes }}MB)
+                        </a>
+                    {{ /if }}
+
+                     {{ if extension=="doc" or extension=="docx"}}
+                         <a href="{{ url }}">
+                             {{ if thumbnail }}
+                                 <img src="{{ thumbnail }}" title="{{ title Doc }}">
+                             {{ else }}
+                                 <img src="/assets/Icons/word.svg" title="{{ title Doc }}">
+                             {{ /if }}
+                             Download: {{ title }} (Doc {{ size_kb }}KB)
+                         </a>
+                     {{ /if }}
+
+                      {{ if extension=="ppt" or extension=="pptx"}}
+                         <a href="{{ url }}">
+                             {{ if thumbnail }}
+                                 <img src="{{ thumbnail }}" title="{{ title Powerpoint File }}">
+                             {{ else }}
+                                 <img src="/assets/Icons/ppt.svg" title="{{ title Powerpoint File }}">
+                             {{ /if }}
+                             Download: {{ title }} (PPT {{ size_megabytes }}MB)
+                         </a>
+                     {{ /if }}
+
+                    {{ if extension=="jpg" or extension=="jpeg" or extension=="png"  }}
+                    <figure>
+                        <a href="{{ url }}" title="Full Size Image" target="_blank"><img src="{{ url }}" width="{{ width }}" height="{{ height }}" alt="{{ alt }}" class="photo"></a>
+                        <figcaption>{{ title }}</figcaption>
+                    {{ /if }}
+
+                    {{ if extension=="mp4" or extension=="mov" }}
+                        <video controls>
+                             <source src="{{ url }}" type="video/mp4">
+                        </video>
+                    {{ /if }}
+
+                    {{ if description }}
+                    <div class="description">
+                        {{ description }}
+                      </div>
+                     {{ /if }}
+
+
+                </div>
+
+
+        {{ /assets:assets_selection }}
+
+         </div>
+
+       </div>
+
+  {{ /if }}
+
+
+{{ /page_content }}

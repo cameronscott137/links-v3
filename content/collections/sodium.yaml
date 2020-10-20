@@ -1,0 +1,11 @@
+title: 'Food Procurement Resources'
+template: sodium-single
+route: '/toolkit/healthy-food-procurement/{slug}'
+taxonomies:
+  - country
+  - guidance-type
+  - policy
+  - resource-category
+  - resource-language
+  - resource-region
+  - setting

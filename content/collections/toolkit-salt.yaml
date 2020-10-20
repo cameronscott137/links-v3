@@ -1,0 +1,9 @@
+title: 'Toolkit - Salt Reduction'
+template: toolkit-single
+route: 'toolkit/hypertension-salt/{slug}'
+taxonomies:
+  - resource-category
+  - resource-language
+  - resource-region
+  - resource-source
+  - resource-type

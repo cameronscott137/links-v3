@@ -1,0 +1,75 @@
+<main>
+    <div class="inner content">
+   
+       <div class="overview">
+           <h1 class="">{{ title }}</h1>
+           
+           <div>
+            {{ intro }}
+            </div>
+        </div>
+         
+            
+            <ol class="steps steps-list">
+                {{ steps }}
+                <li class="htn-step" id="step-{{ increment:step_target from="1" }}">
+                    <details>
+                        <summary><h2><span><img src="{{ step_icon }}" class="step-icon"> {{ step_title }}</span></h2></summary>
+                        
+                        <ol class="sub-tasks">
+                            {{ sub_tasks }}
+                            <li class="sub-task">
+                                <div class="task-title">
+                                    <h4>{{ sub_task_title }}</h4> 
+                                </div>
+                                <div class="task-details">
+                                    <div class="description">{{ description }}
+                                    </div>
+                                    
+                                    <div class="task-links">
+                                        {{ if general_tools_and_templates }}
+                                        <h5>{{ if tools_heading }}{{ tools_heading }}{{ else }}General Tools and Templates{{ /if }}</h5>
+                                        {{ general_tools_and_templates }}
+                                        {{ /if }}
+                                    </div>   
+                                     <div class="task-links">
+                                        {{ if country_specific_examples }}
+                                        <h5>{{ if country_examples_heading }}{{ country_examples_heading }}{{ else }}Country Specific Examples{{ /if }}</h5>
+                                        {{ country_specific_examples }}
+                                        {{ /if }}    
+                                    </div>                                     
+                                
+                                </div>
+                                
+                            </li>
+                            
+                            {{ /sub_tasks }}
+                        </ol>
+                    </li>
+                </details>
+                {{ /steps }}
+            </ol>
+            
+        </div>
+        
+        
+    </div>
+    
+    
+
+        </div>
+    
+</main>
+
+
+<script>
+
+$( document ).ready(function() {
+    $('.expand').on('click', function () {
+            $('details').attr('open', '');
+    });
+});
+
+</script>
+
+

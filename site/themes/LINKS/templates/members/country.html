@@ -1,0 +1,62 @@
+
+<main>
+    <div class="inner">
+        
+    <div class="grid network-list">
+    {{ collection:networking :taxonomy:country="slug" as="entries" }}
+   
+        {{ entries }}
+            {{ if first }}
+            <div>
+             <h1>{{ country }}{{ title }}{{ /country }}</h1>
+             <p><a href="/members/networking">&#8617; View all countries</a></p>
+             </div>
+            {{ /if }}
+    
+    
+        <div class="network-item {{ expertise }} {{ value }}{{ /expertise }}">
+            <h4>{{ official_title }} {{ title }}{{ if post_nominal_letters }}, {{ post_nominal_letters }}{{ /if }} </h4>
+             <p> </p>
+           <p>{{ job_title }} - {{ organization }}</p>
+             <p><a href="mailto:{{ email_address }}">{{ email_address }}</a> {{ if link_to_biography }} | <a href="{{ link_to_biography }}">Biography</a>{{ /if }}<p>
+            </p>  
+                       
+            <table class="network-info">
+                <tbody>
+                    <tr>
+                        <th>Expertise</th>
+                        <td>
+                        
+                        {{ expertise }}
+
+                        {{ if value == "transfat"}}<p>Elimination of trans fat</p>{{ /if }}
+                        {{ if value == "hypertension"}}<p>Hypertension control</p>{{ /if }}
+                        {{ if value == "salt"}}<p>Salt reduction</p>{{ /if }} 
+                        
+                        {{ /expertise }} 
+                        
+                        </td>     
+                    </tr>
+             {{ if works_in }}
+                    <tr>
+                        <th>Works in</th> 
+                        <td>{{ works_in }}</td>
+                    </tr>
+            {{ /if }}
+            
+            {{ if disclosure }}
+            <tr>
+                <th>Disclosure:</th>
+                <td>{{ disclosure }}</td>
+            </tr>
+            {{ /if }}            
+            
+        </table>
+        </div>
+            
+        {{ /entries }}
+    {{ /collection:networking }}
+
+    </div>
+    </div>
+</main>

@@ -1,0 +1,38 @@
+sections:
+  main:
+    display: Main
+    fields:
+      job_title:
+        type: text
+        width: 50
+        display: 'Job Title'
+      location:
+        type: text
+        width: 50
+        display: Location
+      photo:
+        container: main
+        folder: People
+        restrict: true
+        max_files: 1
+        type: assets
+        display: Photo
+      link_to_biography:
+        type: toggle
+        instructions: 'Enable for staff members that need a seperate biography page'
+        display: 'Link to Biography'
+      biography_text:
+        restrict_assets: false
+        type: redactor
+        display: 'Biography Text'
+        show_when:
+          link_to_biography: true
+      further_links:
+        restrict_assets: false
+        type: redactor
+        display: 'Further Links'
+        show_when:
+          link_to_biography: true
+taxonomies: true
+title: People
+create_title: 'Add a person'

@@ -1,0 +1,28 @@
+sections:
+  main:
+    display: Main
+    fields:
+      webinar_image:
+        container: main
+        folder: Webinars
+        restrict: true
+        max_files: 1
+        mode: grid
+        type: assets
+        display: 'Webinar Image'
+        width: 33
+      image_link:
+        type: text
+        instructions: 'If the image links to a resource (optional)'
+        display: 'Image Link'
+      video_embed:
+        type: video
+        display: 'Video Embed'
+        instructions: 'Enter the video URL (e.g https://www.youtube.com/watch?v=JQ4oJaqdeos)'
+      description:
+        restrict_assets: false
+        type: redactor
+        display: Description
+taxonomies: true
+title: Webinars
+create_title: 'Add new webinar'

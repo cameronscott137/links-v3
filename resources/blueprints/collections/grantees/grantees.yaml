@@ -1,0 +1,128 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          display: Title
+          localizable: true
+      -
+        handle: grantee_logo
+        field:
+          type: assets
+          container: main
+          folder: Grantees
+          restrict: true
+          max_files: 1
+          mode: grid
+          display: 'Grantee Logo'
+          width: 33
+      -
+        handle: area
+        field:
+          type: select
+          options:
+            salt: 'Salt reduction'
+            hypertension: 'Blood pressure control'
+            transfat: 'Trans fat elimination'
+          display: Area
+          width: 33
+      -
+        handle: country
+        field:
+          type: text
+          display: Country
+          width: 33
+      -
+        handle: summary_text
+        field:
+          type: text
+          display: 'Summary Text'
+      -
+        handle: description
+        field:
+          type: bard
+          restrict_assets: false
+          display: Description
+          container: main
+          folder: /
+          save_html: true
+          buttons:
+            - bold
+            - italic
+            - unorderedlist
+            - orderedlist
+            - html
+            - image
+            - quote
+            - codeblock
+            - h1
+            - h2
+            - h3
+            - h4
+            - h5
+            - h6
+            - anchor
+      -
+        handle: main_url
+        field:
+          type: grid
+          mode: table
+          add_row: 'Add a URL'
+          fields:
+            -
+              handle: site_url
+              field:
+                type: text
+                width: 50
+                display: 'Site URL'
+            -
+              handle: site_text
+              field:
+                type: text
+                width: 50
+                display: 'Site Text'
+          display: 'Main URL'
+          instructions: 'As some Grantees have several URLs, add each one here'
+      -
+        handle: facebook_url
+        field:
+          type: text
+          display: 'Facebook URL'
+          width: 33
+      -
+        handle: twitter_url
+        field:
+          type: text
+          display: 'Twitter URL'
+          width: 33
+      -
+        handle: sidebar_text
+        field:
+          type: bard
+          container: main
+          folder: /
+          restrict_assets: false
+          instructions: 'Use this field if you need to add futher content, such as a quote'
+          display: 'Sidebar text'
+          save_html: true
+          buttons:
+            - bold
+            - italic
+            - unorderedlist
+            - orderedlist
+            - html
+            - image
+            - quote
+            - codeblock
+            - h1
+            - h2
+            - h3
+            - h4
+            - h5
+            - h6
+            - anchor
+taxonomies: true
+title: Grantees

@@ -1,0 +1,3 @@
+title: Team
+template: team/bio
+route: '/about/team/{slug}'

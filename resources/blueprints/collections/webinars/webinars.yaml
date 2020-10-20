@@ -1,0 +1,51 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: webinar_image
+        field:
+          type: assets
+          container: main
+          folder: Webinars
+          restrict: true
+          max_files: 1
+          mode: grid
+          display: 'Webinar Image'
+          width: 33
+      -
+        handle: image_link
+        field:
+          type: text
+          instructions: 'If the image links to a resource (optional)'
+          display: 'Image Link'
+      -
+        handle: video_embed
+        field:
+          type: video
+          display: 'Video Embed'
+          instructions: 'Enter the video URL (e.g https://www.youtube.com/watch?v=JQ4oJaqdeos)'
+      -
+        handle: description
+        field:
+          type: bard
+          restrict_assets: false
+          display: Description
+          save_html: true
+          buttons:
+            - bold
+            - italic
+            - unorderedlist
+            - orderedlist
+            - html
+            - quote
+            - codeblock
+            - h1
+            - h2
+            - h3
+            - h4
+            - h5
+            - h6
+            - anchor
+taxonomies: true
+title: Webinars

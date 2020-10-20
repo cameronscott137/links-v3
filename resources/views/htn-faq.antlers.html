@@ -1,0 +1,31 @@
+<main>
+    <div class="inner grid sidebar-page">
+        
+        <div class="sidebar">
+            <div class="sticky">
+                {{ sidebar_text }}
+            </div>
+        </div>
+        
+        <div class="content">
+            {{ main_text }}
+        </div>
+
+    </div>
+</main>
+
+<script>
+
+
+      
+
+$( document ).ready(function() {
+  
+    $("[href^='#']").on("click", function() {
+      var $targetDIV = $(this.getAttribute("href"));
+      if ($targetDIV.is(":hidden")) {
+    $targetDIV.closest("details").prop("open", true);
+  }
+});
+
+</script>

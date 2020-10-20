@@ -1,0 +1,7 @@
+title: 'Application form'
+honeypot: given
+email:
+  -
+    to: support@linkscommunity.org
+    subject: 'Application Submission'
+    automagic: true

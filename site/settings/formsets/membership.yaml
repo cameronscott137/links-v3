@@ -1,0 +1,93 @@
+title: 'Application form'
+honeypot: given
+fields:
+  first_name:
+    display: 'First Name'
+    validate: required
+  last_name:
+    display: 'Last Name/ Family Name'
+    validate: required
+  title:
+    display: Title
+  degrees:
+    display: Degrees
+  position:
+    display: 'Position within your organization *'
+    validate: required
+  organization:
+    display: 'Name of your organization *'
+    validate: required
+  email_address:
+    display: 'Email address *'
+    validate: required
+  phone_number:
+    display: 'Phone number'
+  focus_of_cardiovascular_work:
+    display: 'Focus of cardiovascular work'
+  ht_control:
+    display: 'Hypertension control'
+  sodium:
+    display: 'Salt reduction'
+  tf_elimination:
+    display: 'Elimination of trans fat'
+  where_you_work:
+    display: 'Country(ies) in which you work *'
+    validate: required
+  city:
+    display: 'City where you are based *'
+    validate: required
+  country:
+    display: 'Country where you are based *'
+    validate: required
+  bio:
+    display: 'Link to your bio (optional)'
+  affiliation:
+    display: 'Are you affiliated with or supported by any of the following industries (choose all that apply)?'
+  tobacco:
+    display: '1. Tobacco'
+  weapons:
+    display: '2. Weapons'
+  sugary_drinks:
+    display: '3. Sugary drinks'
+  alcohol:
+    display: '4. Alcoholic beverages'
+  pharma:
+    display: '5. Pharmaceuticals, medical devices, for-profit healthcare, health insurance, food, beverage or related industries'
+  not-affiliated:
+    display: '6. I am not affiliated with nor supported by any of the above industries'
+  duration:
+    display: 'If you selected affiliation #5, please summarize the nature and duration of the affiliation/support, and confirm whether it is ongoing'
+  consent:
+    display: 'Do you consent to sharing your contact information? †*'
+    validate: required
+columns:
+  - first_name
+  - last_name
+  - title
+  - degrees
+  - position
+  - organization
+  - email_address
+  - phone_number
+  - focus_of_cardiovascular_work
+  - ht_control
+  - sodium
+  - tf_elimination
+  - where_you_work
+  - city
+  - country
+  - bio
+  - affiliation
+  - tobacco
+  - weapons
+  - sugary_drinks
+  - alcohol
+  - pharma
+  - not-affiliated
+  - duration
+  - consent
+email:
+  -
+    to: support@linkscommunity.org
+    subject: 'Application Submission'
+    automagic: true

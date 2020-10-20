@@ -1,0 +1,3 @@
+title: Grantees
+template: grantee-page
+route: '/about/grantees/{slug}'

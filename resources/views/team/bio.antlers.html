@@ -1,0 +1,26 @@
+
+<main>
+    <div class="inner grid sidebar-page">
+                
+        <div class="sidebar person">
+            <div class="centered">
+                {{ assets:photo }}
+                  <img src="{{ url }}" width="{{ width }}" height="{{ height }}" alt="{{ alt }}" />
+                {{ /assets:photo }}
+                <p>{{ job_title }}</p>
+                <p class="location">{{ location }}</p> 
+                </div>
+                {{ further_links }}     
+        </div>
+        
+        <div class="content">
+            <h1>{{ title }}</h1>
+
+               {{ biography_text }}
+        </div>
+        
+        
+        
+
+    </div>
+</main>

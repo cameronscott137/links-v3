@@ -1,0 +1,2 @@
+title: Country
+route: '/members/networking/{slug}'

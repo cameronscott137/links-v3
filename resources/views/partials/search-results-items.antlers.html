@@ -1,0 +1,59 @@
+{{ if first }}
+    <div class="container" id="Container">
+        <div class="fail-message"><span>No links were found matching the selected filters</span></div>
+{{ /if }}
+
+        <div class="mix {{ collection }}">
+                                    
+{{ if pinned=="true" }}
+<p class="key-r">Key Resource</p>
+{{ /if }}
+            
+            {{ if attachment or link_url }}
+                <p>
+                    <a href="{{ url }}" target="_blank">
+                        <img src="{{ link_thumbnail }}" alt="{{ title }}" >
+                    </a>
+                </p>
+            {{ /if }}
+
+              {{ if mast_image }}
+                <p>
+                    <a href="{{ image_link }}" target="_blank">
+                        <img src="{{ mast_image }}" alt="{{ title }}" >
+                    </a>
+                </p>
+            {{ /if }}                                      
+
+            
+            {{ if grantee_logo }}
+                <p>
+                    <a href="{{ url }}" target="_blank">
+                            <img src="{{ grantee_logo }}" alt="{{ title }}" >
+                        </a>
+                    </p>                                        
+            {{ /if }}
+            
+            <p><a href="{{ url }}">{{ title }}</a></p>
+
+             {{ if main_content }}
+                <div class="description"><p>{{ main_content strip_tags="img|a|p|i|h1|h2|h3|h4|u|strong" safe_truncate="180|..." }}</p></div>
+            {{ /if }}                                        
+
+            {{ if description }}
+                <div class="description"><p>{{ description strip_tags="img|a|p|i|h1|h2|h3|h4|u|strong" safe_truncate="180|..." }}</p></div>
+            {{ /if }}
+
+             {{ if main_text }}
+                <div class="description"><p>{{ main_text strip_tags="img|a|p|i|h1|h2|h3|h4|u|strong" safe_truncate="180|..." }}</p></div>
+            {{ /if }}
+            
+            {{ if taxonomy=="country" }}
+            
+            <p>See all Links Community members in {{ title }}</p>
+            
+            {{ /if }}
+                                                   
+         </div>                                                           
+                                    
+ {{ if last }}</div>{{ /if }}

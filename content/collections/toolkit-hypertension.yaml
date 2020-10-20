@@ -1,0 +1,9 @@
+title: 'Toolkit - Hypertension control'
+template: toolkit-single
+route: 'toolkit/hypertension-control/{slug}'
+taxonomies:
+  - resource-category
+  - resource-language
+  - resource-region
+  - resource-source
+  - resource-type

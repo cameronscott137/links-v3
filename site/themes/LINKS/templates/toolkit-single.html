@@ -1,0 +1,31 @@
+<main>
+    <div class="inner">
+    
+        <div class="c-1">
+
+            <!-- <img src="{{ parent:section_icon }}" class="header-image"> -->              
+                 
+            <h3>Links toolkit</h3>   
+            <h1>{{ title }}</h1>
+            <div class="grid toolkit single">	
+
+
+                    <p><img src="{{ link_thumbnail }}" alt="{{ title }}" ></p>
+                    
+                    <div>
+                  {{ if description }}
+                    <div class="description">{{ description }}</div>
+                    {{ /if }}
+                    
+                 <p><a href="{{ if attachment }}{{ attachment }}{{ else }}{{ link_url }}{{ /if }}" target="_blank" class="button">Download</a></p>
+
+                </div>
+
+            
+            </div>
+            
+        </div>    <!-- End of Toolkit -->
+    
+        </div>
+    </div>
+</main>

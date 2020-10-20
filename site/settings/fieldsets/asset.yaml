@@ -1,0 +1,28 @@
+sections:
+  main:
+    display: Main
+    fields:
+      title:
+        type: text
+        display: Title
+        localizable: true
+      alt:
+        type: text
+        instructions: 'If the asset is an image. describe its content'
+        display: 'Alt Text'
+      description:
+        settings: Basic
+        restrict_assets: false
+        type: redactor
+        display: Description
+      thumbnail:
+        container: main
+        folder: On-the-ground/thumbnails
+        restrict: true
+        type: assets
+        display: Thumbnail
+        instructions: 'If the asset needs a preview image (e.g for a PDF) add the image here'
+        max_files: 1
+        mode: grid
+taxonomies: true
+title: Asset

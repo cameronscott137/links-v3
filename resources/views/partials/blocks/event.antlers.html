@@ -1,0 +1,24 @@
+        <div class="event">
+            <div>
+                <div class="date-block">
+                 <div class="month">{{ start_date format="M" }}</div>
+                 <div class="day">{{ start_date format="d" }}</div>             
+                         
+                     {{ if end_date }}
+         
+                     <p><span class="end"> to {{ end_date format="M d" }}</span>{{ /if }}</p>
+                
+             </div>
+         </div>
+         
+        <div class="description">
+
+         <h2>{{ title }}</h2>
+       
+        <p>{{ start_date format="F d Y h:i A" }}{{ if end_date }} - {{ end_date format="F d Y h:i A" }}{{ /if }}</p>
+        {{ description }}
+        {{ if action_button }}
+            <p><a href="{{ action_button_link }}" class="button">{{ action_button_text }}</a></p>
+        {{ /if }}
+        </div>
+    </div>

@@ -1,0 +1,71 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: mast_image
+        field:
+          type: assets
+          container: main
+          folder: News
+          restrict: true
+          max_files: 1
+          mode: grid
+          display: 'Masthead Image'
+          instructions: 'Mast head image for the story'
+      -
+        handle: image_link
+        field:
+          type: text
+          display: 'Image Link'
+          instructions: 'If the image needs to link to something, add the URL'
+      -
+        handle: main_content
+        field:
+          type: bard
+          restrict_assets: false
+          display: 'Main Content'
+          save_html: true
+          buttons:
+            - bold
+            - italic
+            - unorderedlist
+            - orderedlist
+            - html
+            - quote
+            - codeblock
+            - h1
+            - h2
+            - h3
+            - h4
+            - h5
+            - h6
+            - anchor
+      -
+        handle: news_attachments
+        field:
+          type: grid
+          mode: table
+          add_row: 'Add attachment'
+          fields:
+            -
+              handle: attachment
+              field:
+                type: assets
+                container: main
+                folder: PDFs
+                restrict: true
+                display: Attachment
+                mode: grid
+            -
+              handle: attachment_thumbnail
+              field:
+                type: assets
+                container: main
+                folder: Resources
+                restrict: false
+                display: 'Attachment Thumbnail'
+                mode: grid
+          display: Attachments
+taxonomies: false
+title: 'Community News'

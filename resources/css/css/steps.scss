@@ -1,0 +1,294 @@
+
+// HTN Steps
+
+.content {
+    .steps {
+      list-style-type: none;
+      padding: 0;
+      margin: auto;
+  }
+  
+  .step-icon {
+    width: 4rem;
+    height: 4rem;
+    display: block;
+    margin-bottom: .5rem;
+}
+
+  .sub-tasks {
+    margin: $baseline 0 0 0;
+    list-style-type: none;
+    
+    li {
+      padding: 0.75rem 0;
+    }
+  }
+}
+
+.step+.step {
+  margin-top: 4rem;
+}
+
+li.htn-step {
+  padding: $baseline 0 0 0;
+  counter-reset: substep;  
+  counter-increment: step;
+}
+  
+   .steps {
+  
+  h2 {
+    padding-left: 3rem;
+  }                
+  
+  h2 span {    
+    &::before {
+      content: counter(step);   
+      display: inline-block;
+      margin-left: -3rem;
+      margin-right: 1rem;
+      background: $links-red;
+      color: #fff;
+      text-align: center;
+      border-radius: 50%;
+      font-size: 1.5rem;
+      line-height: 2rem;
+      width: 2rem;
+      height: 2rem;
+      position: absolute;
+      top: 1rem;
+    }
+    
+  }
+
+  .sub-task h4::before {
+    counter-increment: substep;                
+    content: counter(step)counter(substep, upper-latin);   
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: .1rem; 
+    color: $links-red;
+    display: inline-block;
+    margin-right: .5rem;
+    margin-top: .25rem;
+  }                  
+  
+  &:target {
+    background: transparent;
+  }
+  
+  h4+p, h5+p {
+    margin-top: .5rem;
+  }
+  br {
+    margin-top: 0;
+  }
+}
+
+.sub-task {
+  .task-title {
+    border-bottom: 1px solid #ccc;
+  }
+}
+
+.task-links {
+  
+  p+p {
+    margin-top: .5rem;
+  }
+  
+  ul {
+    margin: 0;
+    list-style-type: none;
+    margin-top: 0;
+  }
+
+  li {
+    padding: 0;
+  }
+  
+  *+p {
+    margin-top: 0;
+  }
+}
+
+  
+.steps {
+  
+  details {
+    position: static;
+    padding: 1.5rem;
+    width: 100%;
+    border: 1px solid #CED4D9;
+  }
+  
+  summary {
+    position: relative;
+    
+    &::before {
+      top: 4.75rem;
+      left: .25rem;
+    }
+  }
+
+}
+
+
+
+
+@media screen and (min-width: 800px) {
+
+  .overview {
+    padding-left: 7rem;
+  }
+  
+    .content  {
+      .sub-tasks {
+        margin: $baseline 0 0 3rem;
+      }
+    .step-icon {
+      width: 6rem;
+      height: 6rem;
+      margin: 0 $baseline 0 0;
+    }
+  }
+
+  .steps  {
+
+    summary::before {
+      top: calc(50% - 0.6rem);
+      left: -2rem;
+    }
+    
+    h2 span {
+      display: flex;
+      align-items: center;
+    }
+    
+    h2 span::before {
+      top: 2rem;
+    }
+      
+    details {
+      padding: 1.5rem 1.5rem 1.5rem 2.5rem;
+    }
+    
+  }
+  
+  .htn-steps {
+    grid-gap: 3rem;
+    grid-template-columns: 10rem 1fr;
+  }
+  
+  .htn-nav li a {
+    strong {
+      display: inline-block;
+      line-height: 1.2;
+      margin-top: 0;
+    }
+    span {
+      margin-right: .5rem;
+    }
+  }
+  
+}
+
+@media screen and (min-width: 1000px) {
+  
+    .overview {
+
+    div {
+      background-image: url(/assets/Icons/BP-Taken-scene.svg);
+      background-repeat: no-repeat;
+      background-position: right bottom;
+      padding-right: 30vw;
+      background-size: 30vw;
+    }
+  }
+  
+  .task-links {
+    margin-top: 0;
+  }
+  
+  .task-title h4{
+    display: grid;
+    grid-gap: .5rem;
+    grid-template-columns: 2rem 2fr;
+  }
+  
+  .task-details {
+    margin-top: 1rem; 
+    display: grid;
+    margin-left: 2.5rem;
+    grid-gap: 3rem;
+    grid-template-columns: 1fr 1fr 1fr;    
+  }
+  
+}
+
+// Link Icons
+
+.task-links  {
+  
+  li,p {
+    line-height: 1.75 ;
+  }
+  a {
+    padding-left: 1.7rem;
+    background-image: url(/assets/Icons/generic-link.svg);  
+    background-position: left .15rem;
+    background-repeat: no-repeat;
+    background-size: 1.4rem;
+    display: inline-block;
+    margin:0 .5ch 0 0;
+  }
+  
+  // load linkscommunity icon first
+    a[href*="linkscommunity.org"] { 
+      background-image: url(/assets/Icons/links-small.svg);  
+    }
+    
+    // then replace with PDF where necessary
+    a[href$=".pdf"] { 
+      background-image: url(/assets/Icons/pdf-small.svg); 
+    }
+    
+    a[href$=".xlsx"], a[href$=".xls"], a[href$=".csv"] { 
+      background-image: url(/assets/Icons/xl-small.svg); 
+    }
+    
+    a[href$=".doc"], a[href$=".docx"], a[href$=".doct"] { 
+      background-image: url(/assets/Icons/word-small.svg);  
+    }
+       
+    a[href*="box.com"] { 
+      background-image: url(/assets/Icons/box-small.svg);  
+    }
+
+    a[href*="cdc.gov"] { 
+      background-image: url(/assets/Icons/cdc-small.svg);  
+    }
+    
+    a[href*="youtube.com"] { 
+      background-image: url(/assets/Icons/youtube.svg);  
+    }
+
+    // a[href*="who.int"] { 
+    //   background-image: url(/assets/Icons/who-small.svg);  
+    // }
+
+    a[href*="simple.org"] { 
+      background-image: url(/assets/Icons/simple-small.svg);  
+    }
+        
+    a[href*="zoom.us"], a[href$=".mp4"] { 
+      background-image: url(/assets/Icons/zoom-small.svg);  
+    }
+    
+    a[href$=".ppt"], a[href$=".pptx"] { 
+      background-image: url(/assets/Icons/ppoint-small.svg);  
+    }  
+}
+
+

@@ -1,0 +1,50 @@
+
+<main>
+    <div class="inner content">
+        
+        <div class="grid grantee-header">
+        
+            <div>
+                <h3>Links Grantee: {{ area }}</h3>
+                
+                <h1>{{ title }}</h1>
+                
+                <h2>{{ summary_text }}</h2>
+            </div>
+                                
+        <img src="{{ grantee_logo }}" alt="{{ title }} Logo">
+                                        
+         </div>
+         
+         
+         <div class="grid grantee-body">
+         
+             <div>
+                 {{ description }}
+             </div>
+         
+             <div>
+                 
+                 {{ sidebar_text }}
+                 
+                 <div class="links">
+                 {{ main_url }}
+                     <a href="{{ site_url }}" class="button-link">{{ site_text }}</a></p>
+                 {{ /main_url }}
+                
+                <div class="flex">
+                     {{ if facebook_url }}   
+                        <a href="{{ facebook_url }}" class="icon"><img src="/assets/Icons/Facebook.svg" width="24" height="24"></a>
+                     {{ /if }}
+                     
+                     {{ if twitter_url }}   
+                        <a href="{{ twitter_url }}" class="icon" ><img src="/assets/Icons/twitter.svg" width="24" height="24"></a>
+                     {{ /if }} 
+                 </div>
+                 </div>
+    
+            </div>
+        </div>
+    </div>
+</main>
+

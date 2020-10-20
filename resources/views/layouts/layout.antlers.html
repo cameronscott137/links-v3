@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{ title }} {{ if home }}{{ else }} - LINKS{{ /if }}</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <link rel="stylesheet" href="{{ theme:css }}">
+        <link rel="stylesheet" href="https://use.typekit.net/qwq4tbb.css">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="LINKS Community" content="An online community and resource center for those working to improve cardiovascular health in developing global settings">
+
+        <!-- Colour Chrome in Android to match site -->
+        <meta name="theme-color" content="#e43721">
+
+        <!-- PNG Favicon -->
+        <link rel="icon" type="image/svg+xml" sizes="32x32" href="/assets/Favicons/favicon.svg" >
+        <link rel="icon" type="image/png" sizes="512x512" href="/assets/Favicons/favicon-512.png">
+        <link rel="mask-icon" href="/assets/Favicons/safari-pinned-tab.svg" color="#E43721">
+
+        <script src="{{ theme:js src="jquery" }}"></script>
+
+
+        {{ if segment_1=="toolkit" or segment_1=="sodium-resources" or segment_1=="search" }}
+         <script src="{{ theme:js src="mix" }}"></script>
+        {{ /if }}
+
+        {{ if segment_1=="hypertension-faq" }}
+         <!-- <script src="{{ theme:js src="bigfoot-min" }}"></script> -->
+        {{ /if }}
+
+    </head>
+
+<body class="{{ segment_1 or "home" }} {{ segment_2 }} {{ header-theme }}">
+
+    {{ partial:nav }}
+
+    {{ template_content }}
+
+    {{ partial:footer }}
+
+
+
+    {{ if segment_1=="webinars" }}
+
+    <script>
+        // poster frame click event
+        $(document).on('click','.js-videoPoster',function(ev) {
+          ev.preventDefault();
+          var $poster = $(this);
+          var $wrapper = $poster.closest('.js-videoWrapper');
+          videoPlay($wrapper);
+        });
+
+        // play the targeted video (and hide the poster frame)
+        function videoPlay($wrapper) {
+          var $iframe = $wrapper.find('.js-videoIframe');
+          var src = $iframe.data('src');
+          // hide poster
+          $wrapper.addClass('videoWrapperActive');
+          // add iframe src in, starting the video
+          $iframe.attr('src',src);
+        }
+
+        // stop the targeted/all videos (and re-instate the poster frames)
+        function videoStop($wrapper) {
+          // if we're stopping all videos on page
+          if (!$wrapper) {
+            var $wrapper = $('.js-videoWrapper');
+            var $iframe = $('.js-videoIframe');
+          // if we're stopping a particular video
+          } else {
+            var $iframe = $wrapper.find('.js-videoIframe');
+          }
+          // reveal poster
+          $wrapper.removeClass('videoWrapperActive');
+          // remove youtube link, stopping the video from playing in the background
+          $iframe.attr('src','');
+        }
+    </script>
+
+    {{ /if }}
+
+
+</body>
+</html>

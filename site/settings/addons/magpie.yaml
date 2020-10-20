@@ -1,0 +1,7 @@
+backup-folders:
+  - content
+  - settings
+  - storage
+remove-backups:
+  "after-move": No
+  "after-days": 30

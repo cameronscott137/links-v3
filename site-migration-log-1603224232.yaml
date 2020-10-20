@@ -1,0 +1,188 @@
+-
+  migration: Collection
+  handle: community_news
+  warning: 'Redactor field [main_content] has been migrated to bard.'
+  info: |
+    Not all redactor features and settings are bard-compatible.
+    Please revise your bard configuration as necessary.
+-
+  migration: Collection
+  handle: events
+  warning: 'Redactor field [description] has been migrated to bard.'
+  info: |
+    Not all redactor features and settings are bard-compatible.
+    Please revise your bard configuration as necessary.
+-
+  migration: Collection
+  handle: grantees
+  warning: 'Redactor field [description] has been migrated to bard.'
+  info: |
+    Not all redactor features and settings are bard-compatible.
+    Please revise your bard configuration as necessary.
+-
+  migration: Collection
+  handle: grantees
+  warning: 'Redactor field [sidebar_text] has been migrated to bard.'
+  info: |
+    Not all redactor features and settings are bard-compatible.
+    Please revise your bard configuration as necessary.
+-
+  migration: Collection
+  handle: sodium
+  warning: 'Redactor field [description] has been migrated to bard.'
+  info: |
+    Not all redactor features and settings are bard-compatible.
+    Please revise your bard configuration as necessary.
+-
+  migration: Collection
+  handle: team-list
+  warning: 'Redactor field [biography_text] has been migrated to bard.'
+  info: |
+    Not all redactor features and settings are bard-compatible.
+    Please revise your bard configuration as necessary.
+-
+  migration: Collection
+  handle: team-list
+  warning: 'Redactor field [further_links] has been migrated to bard.'
+  info: |
+    Not all redactor features and settings are bard-compatible.
+    Please revise your bard configuration as necessary.
+-
+  migration: Collection
+  handle: webinars
+  warning: 'Redactor field [description] has been migrated to bard.'
+  info: |
+    Not all redactor features and settings are bard-compatible.
+    Please revise your bard configuration as necessary.
+-
+  migration: 'Pages collection/structure'
+  handle: pages
+  warning: 'Redactor field [block_content] has been migrated to bard.'
+  info: |
+    Not all redactor features and settings are bard-compatible.
+    Please revise your bard configuration as necessary.
+-
+  migration: 'Pages collection/structure'
+  handle: pages
+  warning: 'Redactor field [column_1] has been migrated to bard.'
+  info: |
+    Not all redactor features and settings are bard-compatible.
+    Please revise your bard configuration as necessary.
+-
+  migration: 'Pages collection/structure'
+  handle: pages
+  warning: 'Redactor field [column_2] has been migrated to bard.'
+  info: |
+    Not all redactor features and settings are bard-compatible.
+    Please revise your bard configuration as necessary.
+-
+  migration: 'Pages collection/structure'
+  handle: pages
+  warning: 'Redactor field [column_1] has been migrated to bard.'
+  info: |
+    Not all redactor features and settings are bard-compatible.
+    Please revise your bard configuration as necessary.
+-
+  migration: 'Pages collection/structure'
+  handle: pages
+  warning: 'Redactor field [column_2] has been migrated to bard.'
+  info: |
+    Not all redactor features and settings are bard-compatible.
+    Please revise your bard configuration as necessary.
+-
+  migration: 'Pages collection/structure'
+  handle: pages
+  warning: 'Redactor field [column_3] has been migrated to bard.'
+  info: |
+    Not all redactor features and settings are bard-compatible.
+    Please revise your bard configuration as necessary.
+-
+  migration: 'Pages collection/structure'
+  handle: pages
+  warning: 'Redactor field [column_1] has been migrated to bard.'
+  info: |
+    Not all redactor features and settings are bard-compatible.
+    Please revise your bard configuration as necessary.
+-
+  migration: 'Pages collection/structure'
+  handle: pages
+  warning: 'Redactor field [column_2] has been migrated to bard.'
+  info: |
+    Not all redactor features and settings are bard-compatible.
+    Please revise your bard configuration as necessary.
+-
+  migration: 'Pages collection/structure'
+  handle: pages
+  warning: 'Redactor field [column_3] has been migrated to bard.'
+  info: |
+    Not all redactor features and settings are bard-compatible.
+    Please revise your bard configuration as necessary.
+-
+  migration: 'Pages collection/structure'
+  handle: pages
+  warning: 'Redactor field [column_4] has been migrated to bard.'
+  info: |
+    Not all redactor features and settings are bard-compatible.
+    Please revise your bard configuration as necessary.
+-
+  migration: 'Pages collection/structure'
+  handle: pages
+  warning: 'Redactor field [column_1] has been migrated to bard.'
+  info: |
+    Not all redactor features and settings are bard-compatible.
+    Please revise your bard configuration as necessary.
+-
+  migration: 'Pages collection/structure'
+  handle: pages
+  warning: 'Redactor field [column_2] has been migrated to bard.'
+  info: |
+    Not all redactor features and settings are bard-compatible.
+    Please revise your bard configuration as necessary.
+-
+  migration: 'Pages collection/structure'
+  handle: pages
+  warning: 'Redactor field [column_3] has been migrated to bard.'
+  info: |
+    Not all redactor features and settings are bard-compatible.
+    Please revise your bard configuration as necessary.
+-
+  migration: 'Pages collection/structure'
+  handle: pages
+  warning: 'Redactor field [column_4] has been migrated to bard.'
+  info: |
+    Not all redactor features and settings are bard-compatible.
+    Please revise your bard configuration as necessary.
+-
+  migration: 'Pages collection/structure'
+  handle: pages
+  warning: 'Redactor field [column_5] has been migrated to bard.'
+  info: |
+    Not all redactor features and settings are bard-compatible.
+    Please revise your bard configuration as necessary.
+-
+  migration: Taxonomy
+  handle: guidance-type
+  error: 'Fieldset cannot be found at path [site/settings/fieldsets/term.yaml].'
+-
+  migration: Taxonomy
+  handle: policy
+  warning: 'Redactor field [description] has been migrated to bard.'
+  info: |
+    Not all redactor features and settings are bard-compatible.
+    Please revise your bard configuration as necessary.
+-
+  migration: Taxonomy
+  handle: setting
+  error: 'Fieldset cannot be found at path [site/settings/fieldsets/term.yaml].'
+-
+  migration: 'Asset container'
+  handle: main
+  warning: 'Redactor field [description] has been migrated to bard.'
+  info: |
+    Not all redactor features and settings are bard-compatible.
+    Please revise your bard configuration as necessary.
+-
+  migration: Theme
+  handle: LINKS
+  warning: 'Your [LINKS] theme templates have been migrated to [resources/views].'
+  info: 'It''s worth noting that Antlers templating has undergone a number of changes.  Many of these changes are opinionated and will need your attention (please refer to [https://statamic.dev/upgrade-guide] for an overview of the most breaking changes).  Your theme''s front end assets and build pipelines will also need to be manually migrated.  We recommend checking out Laravel Mix if you are building your assets (Mix comes pre-installed into your v3 apps, and documentation is available at [https://laravel.com/docs/mix]).'

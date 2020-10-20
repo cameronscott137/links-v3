@@ -1,0 +1,14 @@
+driver: local
+auto_index: true
+default_index: default
+searchable:
+  - title
+  - description
+  - resource_type
+  - source
+  - column_1
+  - column_2
+  - column_3
+  - column_4
+  - main_text
+  - main_content

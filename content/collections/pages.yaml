@@ -1,0 +1,68 @@
+title: Pages
+route: '{{ parent_uri }}/{{ slug }}'
+structure:
+  root: true
+  tree:
+    -
+      entry: 3ad492bd-045c-46c4-8176-8a7e66687d8f
+    -
+      entry: 30404b10-3c1f-4cea-bf8f-b58e613856bb
+      children:
+        -
+          entry: 379cae09-c729-42ea-8499-46eec63257d6
+        -
+          entry: ba91ad21-ebec-43ce-8ed0-4e5a916ceed3
+    -
+      entry: 2f74f41c-8c2b-450f-be11-b8c930cf9f7f
+      children:
+        -
+          entry: c9c83ddf-b33e-4f26-a3d6-411cf9b05b28
+    -
+      entry: c2d7dab9-fa95-48df-a863-156c04ba9242
+    -
+      entry: 145eba50-ecea-4f2a-9b70-726385c54619
+      children:
+        -
+          entry: 79258f57-29f3-4eb5-864d-9d4f8f480318
+        -
+          entry: 83012fb0-b38f-493e-a9a1-959a62103ce2
+        -
+          entry: f4841570-9384-4935-ba3b-c1255d60fc38
+        -
+          entry: e163beab-3d74-47c8-b7d5-a05c4bb948c5
+        -
+          entry: 1643db20-2f29-41ec-ab26-ae8276f2be04
+        -
+          entry: 25402897-f029-40dc-acde-d95fc2c17721
+        -
+          entry: cd45ff86-820b-4dee-bbb1-3ed0c5b835da
+    -
+      entry: 549f8997-29a1-48d8-9764-61e6d120366e
+    -
+      entry: dd7dc4e1-8429-4431-a2de-5013121cd82d
+    -
+      entry: 411036a9-8047-4cf9-b5e3-237d7ee739f0
+      children:
+        -
+          entry: dd27e5fd-36fd-4602-ba38-ffcee7425c83
+    -
+      entry: 5a68d0b2-1620-424a-9406-466b592e8d12
+      children:
+        -
+          entry: 49354e93-bfec-4181-a9f3-f6a50ef9102d
+        -
+          entry: 2db87307-b6f6-4386-8e09-0d4818815720
+        -
+          entry: d3060a38-ad4e-4d45-ab48-67c72bd69bcb
+        -
+          entry: 3f474fa7-aae9-4b36-9a47-fa74c2f4ce76
+        -
+          entry: 9e5e0e35-9181-4e26-8947-5cf1122abd4f
+    -
+      entry: e5ad7cfe-6fdf-4aef-baf1-55c3188ffa7e
+    -
+      entry: 9101773a-8fd4-44c1-951c-57db10b1ea09
+    -
+      entry: 423f0606-3d53-4d48-a344-a659303f59fc
+    -
+      entry: f4093f85-926f-481a-827a-89b7ac7d04f6
