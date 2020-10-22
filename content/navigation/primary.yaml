@@ -1,4 +1,31 @@
 title: 'Primary Nav'
 collections:
   - pages
-max_depth: 1
+max_depth: 2
+tree:
+  -
+    entry: 30404b10-3c1f-4cea-bf8f-b58e613856bb
+    children:
+      -
+        entry: 379cae09-c729-42ea-8499-46eec63257d6
+      -
+        entry: ba91ad21-ebec-43ce-8ed0-4e5a916ceed3
+  -
+    entry: 145eba50-ecea-4f2a-9b70-726385c54619
+    children:
+      -
+        entry: 79258f57-29f3-4eb5-864d-9d4f8f480318
+      -
+        entry: 83012fb0-b38f-493e-a9a1-959a62103ce2
+      -
+        entry: f4841570-9384-4935-ba3b-c1255d60fc38
+      -
+        entry: e163beab-3d74-47c8-b7d5-a05c4bb948c5
+      -
+        entry: 1643db20-2f29-41ec-ab26-ae8276f2be04
+  -
+    entry: 549f8997-29a1-48d8-9764-61e6d120366e
+  -
+    entry: dd7dc4e1-8429-4431-a2de-5013121cd82d
+  -
+    entry: 411036a9-8047-4cf9-b5e3-237d7ee739f0
