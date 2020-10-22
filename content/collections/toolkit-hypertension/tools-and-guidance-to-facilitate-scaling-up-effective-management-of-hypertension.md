@@ -17,4 +17,4 @@ resource-type:
   - protocol
   - monitoring-tool
   - clinic-resources
-blueprint: Toolkit
+blueprint: htn_steps

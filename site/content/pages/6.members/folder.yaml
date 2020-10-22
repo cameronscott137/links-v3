@@ -1,6 +1,0 @@
-protect:
-  type: password
-  allowed: ['community924']
-  form_url: /login
-  append_redirect: true
-layout: members

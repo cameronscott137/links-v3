@@ -1,0 +1,212 @@
+title: 'Hypertension Steps'
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          validate:
+            - required
+      -
+        handle: intro
+        field:
+          always_show_set_button: false
+          buttons:
+            - h2
+            - h3
+            - bold
+            - italic
+            - unorderedlist
+            - orderedlist
+            - removeformat
+            - quote
+            - anchor
+            - image
+            - table
+          save_html: false
+          toolbar_mode: fixed
+          link_noopener: false
+          link_noreferrer: false
+          target_blank: false
+          reading_time: false
+          fullscreen: true
+          allow_source: true
+          display: Intro
+          type: bard
+          icon: bard
+          listable: hidden
+      -
+        handle: steps
+        field:
+          mode: stacked
+          reorderable: true
+          display: Steps
+          type: grid
+          icon: grid
+          listable: true
+          fields:
+            -
+              handle: step_title
+              field:
+                input_type: text
+                display: 'Step Title'
+                type: text
+                icon: text
+                listable: hidden
+                width: 50
+            -
+              handle: step_icon
+              field:
+                mode: grid
+                restrict: false
+                allow_uploads: true
+                max_files: 1
+                display: 'Step Icon'
+                type: assets
+                icon: assets
+                listable: hidden
+                width: 50
+            -
+              handle: sub_tasks
+              field:
+                fields:
+                  -
+                    handle: sub_task_title
+                    field:
+                      input_type: text
+                      display: 'Sub Task Title'
+                      type: text
+                      icon: text
+                      listable: hidden
+                  -
+                    handle: description
+                    field:
+                      always_show_set_button: false
+                      buttons:
+                        - h2
+                        - h3
+                        - bold
+                        - italic
+                        - unorderedlist
+                        - orderedlist
+                        - removeformat
+                        - quote
+                        - anchor
+                        - image
+                        - table
+                      save_html: false
+                      toolbar_mode: fixed
+                      link_noopener: false
+                      link_noreferrer: false
+                      target_blank: false
+                      reading_time: false
+                      fullscreen: true
+                      allow_source: true
+                      display: Description
+                      type: bard
+                      icon: bard
+                      listable: hidden
+                      width: 33
+                  -
+                    handle: general_tools_and_templates
+                    field:
+                      always_show_set_button: false
+                      buttons:
+                        - h2
+                        - h3
+                        - bold
+                        - italic
+                        - unorderedlist
+                        - orderedlist
+                        - removeformat
+                        - quote
+                        - anchor
+                        - image
+                        - table
+                      save_html: false
+                      toolbar_mode: fixed
+                      link_noopener: false
+                      link_noreferrer: false
+                      target_blank: false
+                      reading_time: false
+                      fullscreen: true
+                      allow_source: true
+                      display: 'General Tools and Templates'
+                      type: bard
+                      icon: bard
+                      listable: hidden
+                      width: 33
+                  -
+                    handle: country_specific_examples
+                    field:
+                      always_show_set_button: false
+                      buttons:
+                        - h2
+                        - h3
+                        - bold
+                        - italic
+                        - unorderedlist
+                        - orderedlist
+                        - removeformat
+                        - quote
+                        - anchor
+                        - image
+                        - table
+                      save_html: false
+                      toolbar_mode: fixed
+                      link_noopener: false
+                      link_noreferrer: false
+                      target_blank: false
+                      reading_time: false
+                      fullscreen: true
+                      allow_source: true
+                      display: 'Country Specific Examples'
+                      type: bard
+                      icon: bard
+                      listable: hidden
+                      width: 33
+                  -
+                    handle: tools_heading
+                    field:
+                      input_type: text
+                      display: 'Tools Heading'
+                      type: text
+                      icon: text
+                      listable: hidden
+                  -
+                    handle: country_examples_heading
+                    field:
+                      input_type: text
+                      display: 'Country Examples Heading'
+                      type: text
+                      icon: text
+                      listable: hidden
+                mode: stacked
+                reorderable: true
+                display: 'Sub Tasks'
+                type: grid
+                icon: grid
+                listable: hidden
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          required: true
+          localizable: true
+          validate:
+            - required
+      -
+        handle: parent
+        field:
+          type: entries
+          collections:
+            - pages
+          max_items: 1
+          listable: false
+          localizable: true

@@ -17,4 +17,4 @@ template: sodium-resources
 mount: sodium
 id: e163beab-3d74-47c8-b7d5-a05c4bb948c5
 slug: healthy-food-procurement
-blueprint: default
+blueprint: home

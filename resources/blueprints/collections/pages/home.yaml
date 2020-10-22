@@ -7,16 +7,23 @@ sections:
         handle: title
         field:
           type: text
+          required: true
           width: 33
           localizable: true
           display: Title
           instructions: 'Longer page title'
+          validate:
+            - required
       -
         handle: slug
         field:
           type: text
+          required: true
+          localizable: true
           width: 33
           instructions: 'The unique part of the url, shorter is better'
+          validate:
+            - required
       -
         handle: nav_title
         field:
@@ -75,6 +82,15 @@ sections:
                       - h5
                       - h6
                       - anchor
+                    listable: hidden
+                    always_show_set_button: false
+                    toolbar_mode: fixed
+                    link_noopener: false
+                    link_noreferrer: true
+                    target_blank: false
+                    reading_time: false
+                    fullscreen: true
+                    allow_source: true
                 -
                   handle: class
                   field:
@@ -147,7 +163,6 @@ sections:
                   field:
                     type: bard
                     restrict_assets: false
-                    width: 33
                     display: 'Column 1'
                     container: main
                     folder: /
@@ -168,12 +183,20 @@ sections:
                       - h5
                       - h6
                       - anchor
+                    listable: hidden
+                    always_show_set_button: false
+                    toolbar_mode: fixed
+                    link_noopener: false
+                    link_noreferrer: true
+                    target_blank: false
+                    reading_time: false
+                    fullscreen: true
+                    allow_source: true
                 -
                   handle: column_2
                   field:
                     type: bard
                     restrict_assets: false
-                    width: 33
                     display: 'Column 2'
                     container: main
                     folder: /
@@ -194,12 +217,20 @@ sections:
                       - h5
                       - h6
                       - anchor
+                    listable: hidden
+                    always_show_set_button: false
+                    toolbar_mode: fixed
+                    link_noopener: false
+                    link_noreferrer: true
+                    target_blank: false
+                    reading_time: false
+                    fullscreen: true
+                    allow_source: true
                 -
                   handle: column_3
                   field:
                     type: bard
                     restrict_assets: false
-                    width: 33
                     display: 'Column 3'
                     container: main
                     folder: /
@@ -220,6 +251,15 @@ sections:
                       - h5
                       - h6
                       - anchor
+                    listable: hidden
+                    always_show_set_button: false
+                    toolbar_mode: fixed
+                    link_noopener: false
+                    link_noreferrer: true
+                    target_blank: false
+                    reading_time: false
+                    fullscreen: true
+                    allow_source: true
             four_column_block:
               display: 'Four Column Block'
               fields:
@@ -472,7 +512,71 @@ sections:
                       centered: 'Centered Heading'
                       reverse: 'White on Red'
                     display: 'Layout Features'
+            simple_text_block:
+              display: 'Simple Text Block'
+              fields:
+                -
+                  handle: text_block
+                  field:
+                    always_show_set_button: false
+                    buttons:
+                      - h2
+                      - h3
+                      - bold
+                      - italic
+                      - unorderedlist
+                      - orderedlist
+                      - removeformat
+                      - quote
+                      - anchor
+                      - image
+                      - table
+                    save_html: false
+                    toolbar_mode: fixed
+                    link_noopener: false
+                    link_noreferrer: false
+                    target_blank: false
+                    reading_time: false
+                    fullscreen: true
+                    allow_source: true
+                    display: 'Text Block'
+                    type: bard
+                    icon: bard
+                    listable: hidden
+            form_block:
+              display: 'Form Block'
+              fields:
+                -
+                  handle: form
+                  field:
+                    max_items: 1
+                    display: Form
+                    type: form
+                    icon: form
+                    listable: hidden
+            asset_gallery:
+              display: 'Asset Gallery'
+              fields:
+                -
+                  handle: gallery_heading
+                  field:
+                    input_type: text
+                    display: 'Gallery Heading'
+                    type: text
+                    icon: text
+                    listable: hidden
+                -
+                  handle: selected_assets
+                  field:
+                    mode: grid
+                    restrict: false
+                    allow_uploads: true
+                    display: 'Selected Assets'
+                    type: assets
+                    icon: assets
+                    listable: hidden
           display: 'Page Content'
+          listable: hidden
   page_settings:
     display: 'Page Settings'
     fields:
@@ -488,4 +592,15 @@ sections:
           type: template
           width: 25
           display: Template
-taxonomies: true
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: parent
+        field:
+          type: entries
+          collections:
+            - pages
+          max_items: 1
+          listable: false
+          localizable: true

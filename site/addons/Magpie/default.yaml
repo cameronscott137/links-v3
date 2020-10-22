@@ -1,5 +1,0 @@
-backup-folders: []
-copy-backups: []
-remove-backups:
-  "after-move": No
-  "after-days": 30

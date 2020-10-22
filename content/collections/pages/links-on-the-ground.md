@@ -54,4 +54,4 @@ page_content:
 hide_from_top_nav: true
 id: c2d7dab9-fa95-48df-a863-156c04ba9242
 slug: links-on-the-ground
-blueprint: default
+blueprint: home

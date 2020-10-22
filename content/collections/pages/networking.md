@@ -27,4 +27,4 @@ template: members/networking
 mount: networking
 id: 2db87307-b6f6-4386-8e09-0d4818815720
 slug: networking
-blueprint: default
+blueprint: home

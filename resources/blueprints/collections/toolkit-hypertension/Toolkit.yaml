@@ -1,7 +1,15 @@
+title: Toolkit-Links
 sections:
   main:
     display: Link
     fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          validate:
+            - required
       -
         handle: link_url
         field:
@@ -47,5 +55,54 @@ sections:
           instructions: 'Pin this item to the top as a Key Resource?'
           width: 25
           display: 'Key Resource'
-taxonomies: true
-title: Toolkit-Links
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          required: true
+          localizable: true
+          validate:
+            - required
+      -
+        handle: resource-category
+        field:
+          type: terms
+          taxonomies:
+            - resource-category
+          display: 'Resource Category'
+          mode: select
+      -
+        handle: resource-language
+        field:
+          type: terms
+          taxonomies:
+            - resource-language
+          display: 'Resource Language'
+          mode: select
+      -
+        handle: resource-region
+        field:
+          type: terms
+          taxonomies:
+            - resource-region
+          display: 'Resource Region'
+          mode: select
+      -
+        handle: resource-source
+        field:
+          type: terms
+          taxonomies:
+            - resource-source
+          display: 'Resource Source'
+          mode: select
+      -
+        handle: resource-type
+        field:
+          type: terms
+          taxonomies:
+            - resource-type
+          display: 'Resource Type'
+          mode: select

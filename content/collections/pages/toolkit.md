@@ -37,4 +37,4 @@ hide_from_top_nav: false
 template: toolkit-hub
 id: 145eba50-ecea-4f2a-9b70-726385c54619
 slug: toolkit
-blueprint: default
+blueprint: home

@@ -1,3 +1,4 @@
+---
 title: About
 nav_title: About
 sidebar_text: |
@@ -19,6 +20,7 @@ sidebar_text: |
   </p>
   <p><a href="#contact">Contact us</a>
   </p>
+  
 main_text: |
   <h1 id="who">
   Who are we?
@@ -344,6 +346,9 @@ main_text: |
   </ol>
 hide_from_top_nav: false
 template: about
-id: 30404b10-3c1f-4cea-bf8f-b58e613856bb
 slug: about
 blueprint: about
+updated_by: 59e23a81-7b04-45a1-bd00-c2516d60e94e
+updated_at: 1603227954
+id: 30404b10-3c1f-4cea-bf8f-b58e613856bb
+---

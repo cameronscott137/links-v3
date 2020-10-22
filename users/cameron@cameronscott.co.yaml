@@ -1,5 +1,9 @@
 roles:
   - editor
+name: 'Cameron Scott'
 id: 59e23a81-7b04-45a1-bd00-c2516d60e94e
 password_hash: $2y$10$ZpzVlmZD.FWqqGtmMRECeu7z7BX9WeMmc//4tI88zY2aAZphNWSiS
-name: 'Cameron Scott'
+preferences:
+  collections:
+    pages:
+      after_save: continue_editing

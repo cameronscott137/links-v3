@@ -13,4 +13,4 @@ template: team/team
 mount: team-list
 id: 379cae09-c729-42ea-8499-46eec63257d6
 slug: team
-blueprint: default
+blueprint: home

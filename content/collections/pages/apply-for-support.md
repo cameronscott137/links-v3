@@ -37,4 +37,4 @@ page_content:
 hide_from_top_nav: false
 id: 3f474fa7-aae9-4b36-9a47-fa74c2f4ce76
 slug: apply-for-support
-blueprint: default
+blueprint: home

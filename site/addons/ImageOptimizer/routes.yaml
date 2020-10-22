@@ -1,4 +1,0 @@
-routes:
-  post@optimize: 
-    uses: ImageOptimizerController@optimize
-    as: imageoptimizer.optimize

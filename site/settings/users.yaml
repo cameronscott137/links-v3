@@ -1,6 +1,0 @@
-login_type: username
-new_user_roles:
-  - ea3a604e-67f5-460b-8127-d836e2b07641
-enable_gravatar: true
-driver: file
-redis_write_file: true

@@ -14,4 +14,4 @@ hide_from_top_nav: true
 template: page
 id: dd27e5fd-36fd-4602-ba38-ffcee7425c83
 slug: thanks
-blueprint: default
+blueprint: home

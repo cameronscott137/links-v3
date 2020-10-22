@@ -11,4 +11,4 @@ hide_from_top_nav: true
 template: login
 id: 9101773a-8fd4-44c1-951c-57db10b1ea09
 slug: login
-blueprint: default
+blueprint: home

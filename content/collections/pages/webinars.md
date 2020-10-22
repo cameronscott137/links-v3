@@ -14,4 +14,4 @@ template: webinars
 mount: webinars
 id: dd7dc4e1-8429-4431-a2de-5013121cd82d
 slug: webinars
-blueprint: default
+blueprint: home

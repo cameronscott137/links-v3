@@ -47,4 +47,4 @@ hide_from_top_nav: false
 template: join
 id: 411036a9-8047-4cf9-b5e3-237d7ee739f0
 slug: join
-blueprint: default
+blueprint: home

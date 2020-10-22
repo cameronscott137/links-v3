@@ -10,4 +10,4 @@ hide_from_top_nav: false
 template: members/events
 id: 49354e93-bfec-4181-a9f3-f6a50ef9102d
 slug: events-and-opportunities
-blueprint: default
+blueprint: home

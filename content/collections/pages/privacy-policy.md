@@ -88,4 +88,4 @@ page_content:
 hide_from_top_nav: true
 id: e5ad7cfe-6fdf-4aef-baf1-55c3188ffa7e
 slug: privacy-policy
-blueprint: default
+blueprint: home
